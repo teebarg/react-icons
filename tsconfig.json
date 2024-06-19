@@ -1,16 +1,19 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
-        "emitDeclarationOnly": true,
         "module": "es2015",
         "target": "es5",
-        "lib": ["es2017", "dom"],
+        "lib": [ "es2017", "dom"],
         "jsx": "react",
         "moduleResolution": "node",
         "baseUrl": ".",
         "declaration": true,
         "strict": true,
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        "noEmit": true,
+        "skipLibCheck": true
     },
-    "include": ["src"]
+    "include": [
+        "src"
+    ]
 }

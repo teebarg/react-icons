@@ -4,14 +4,28 @@
     "description": "A react svg icons with typescript",
     "types": "dist/index.d.ts",
     "main": "dist/index.js",
-    "module": "dist/index.es.js",
+    "module1": "dist/index.es.js",
+    "module": "dist/index.js",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "sideEffects": false,
     "repository": {
         "type": "git",
         "url": "git+https://github.com/teebarg/react-icons.git"
     },
     "scripts": {
         "build": "tsc && rollup -c",
-        "build:watch": "tsc --watch"
+        "build:vite": "tsc --noEmit && vite build",
+        "build:watch": "tsc --watch",
+        "prepare": "npm run build"
     },
     "keywords": [],
     "author": {
