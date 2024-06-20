@@ -21,7 +21,8 @@
         "url": "git+https://github.com/teebarg/react-icons.git"
     },
     "scripts": {
-        "build": "tsc && rollup -c",
+        "build": "tsc",
+        "build:rollup": "tsc && rollup -c",
         "build:vite": "tsc --noEmit && vite build",
         "build:watch": "tsc --watch",
         "prepare": "npm run build"
