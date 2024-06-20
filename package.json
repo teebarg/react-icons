@@ -5,7 +5,9 @@
     "types": "./dist/index.d.ts",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
-    "files": ["dist"],
+    "files": [
+        "dist"
+    ],
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",
@@ -22,7 +24,11 @@
         "build:watch": "tsc --watch",
         "prepare": "npm run build"
     },
-    "keywords": [],
+    "keywords": [
+        "react",
+        "icons",
+        "svgs"
+    ],
     "author": {
         "name": "Adeniyi Aderounmu",
         "email": "teebarg01@gmail.com",
