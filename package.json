@@ -2,17 +2,16 @@
     "name": "react-icons",
     "version": "1.0.0",
     "description": "A react svg icons with typescript",
-    "types": "dist/index.d.ts",
-    "main": "dist/index.js",
-    "module": "dist/index.es.js",
-    "exports": {
-        ".": {
-            "types": "./dist/index.d.ts",
-            "import": "./dist/index.js",
-            "require": "./dist/index.cjs"
-        }
-    },
+    "types1": "dist/index.d.ts",
+    "main1": "dist/index.js",
+    "module1": "dist/index.es.js",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
     "files": [
+        "dist/**/*"
+    ],
+    "files1": [
         "dist"
     ],
     "sideEffects": false,
