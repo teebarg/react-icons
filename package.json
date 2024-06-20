@@ -4,16 +4,14 @@
     "description": "A react svg icons with typescript",
     "types": "./dist/index.d.ts",
     "main": "./dist/index.js",
-    "module1": "dist/index.es.js",
     "module": "./dist/index.mjs",
-    "files": [
-        "dist/**/*"
-    ],
-    "files1": [
-        "dist/**/*",
-        "dist",
-        "src"
-    ],
+    "files": ["dist"],
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
     "sideEffects": false,
     "repository": {
         "type": "git",
