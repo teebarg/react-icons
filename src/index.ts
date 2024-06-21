@@ -34,4 +34,6 @@ export {
     ThumbsUpIcon,
     ThumbsDownIcon,
     EmojiIcon,
+    ArrowUpIcon,
+    SquareIcon
 } from "./core-icons";
