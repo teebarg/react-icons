@@ -4,6 +4,7 @@ export { MasterCardIcon, PayPalIcon, VisaCardIcon } from "./icons/payment";
 export {
     MailIcon,
     SearchIcon,
+    ExclamationIcon,
     EyeSlashFilledIcon,
     EyeFilledIcon,
     PlusIcon,

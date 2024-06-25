@@ -175,8 +175,17 @@ export const EditIcon = ({ height = "1em", width = "1em", ...props }: IconSvgPro
     </svg>
 );
 
-export const DeleteIcon = ({ height = "1em", width = "1em", ...props }: IconSvgProps) => (
-    <svg aria-hidden="true" fill="none" focusable="false" role="presentation" viewBox="0 0 20 20" width={width} height={height} {...props}>
+export const DeleteIcon = ({ size = 16, height = "1em", width = "1em", ...props }: IconSvgProps) => (
+    <svg
+        aria-hidden="true"
+        fill="none"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 20 20"
+        width={size || width}
+        height={size || height}
+        {...props}
+    >
         <path
             d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332"
             stroke="currentColor"
@@ -444,6 +453,25 @@ export const SquareIcon = ({ size, height = "24", width = "24", ...props }: Icon
     return (
         <svg width={size || width} height={size || height} {...props} viewBox="0 0 16 16" fill="currentColor">
             <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" strokeWidth="0"></path>
+        </svg>
+    );
+};
+
+export const ExclamationIcon = ({ size, height = "24", width = "24", ...props }: IconSvgProps) => {
+    return (
+        <svg
+            width={size || width}
+            height={size || height}
+            {...props}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <line x1="12" y1="2" x2="12" y2="16"></line>
+            <circle cx="12" cy="20" r="2"></circle>
         </svg>
     );
 };
