@@ -5,9 +5,9 @@
         "lib": ["dom", "esnext"],
         "declaration": true,
         "jsx": "react",
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "moduleResolution": "node",
+        "baseUrl": "."
     },
-    "include": [
-        "src"
-    ]
+    "include": ["src"]
 }
