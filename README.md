@@ -7,8 +7,8 @@ A collection of React icons created with TypeScript.
 You can install the package from the GitHub repository using npm or yarn:
 
 ```bash
-npm install github:teebarg/react-icons
-yarn add github:teebarg/react-icons
+npm install nui-react-icons
+yarn add nui-react-icons
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ yarn add github:teebarg/react-icons
 Import the icons you need from the package:
 
 ```jsx
-import { Logo } from 'react-icons';
+import { UploadIcon } from "nui-react-icons";
 ```
 
 Then, use the icons as React components in your application:
@@ -25,7 +25,7 @@ Then, use the icons as React components in your application:
 function App() {
   return (
     <div>
-      <Logo size={48} />
+      <UploadIcon size={48} className="h-16 w-16" fill="#007bff" />
     </div>
   );
 }
