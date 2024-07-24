@@ -457,21 +457,19 @@ export const SquareIcon = ({ size, height = "24", width = "24", ...props }: Icon
     );
 };
 
-export const ExclamationIcon = ({ size, height = "24", width = "24", ...props }: IconSvgProps) => {
+export const ExclamationIcon = ({ size, height = "20", width = "20", ...props }: IconSvgProps) => {
     return (
-        <svg
-            width={size || width}
-            height={size || height}
-            {...props}
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <line x1="12" y1="2" x2="12" y2="16"></line>
-            <circle cx="12" cy="20" r="2"></circle>
+        <svg viewBox="0 0 24 24" fill="currentColor" width={size || width} height={size || height} {...props}>
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+        </svg>
+    );
+};
+
+export const UploadIcon = ({ size, height = "20", width = "20", ...props }: IconSvgProps) => {
+    return (
+        <svg fill="currentColor" viewBox="0 0 24 24" width={size || width} height={size || height} {...props}>
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z" />
         </svg>
     );
 };

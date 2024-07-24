@@ -1,6 +1,7 @@
 export { DiscordIcon, TwitterIcon, GithubIcon, FacebookIcon, YoutubeIcon, WhatsAppIcon } from "./icons/social";
-export { MoonFilledIcon, SunFilledIcon, HeartFilledIcon } from "./icons/theme";
+export { MoonFilledIcon, SunFilledIcon, HeartFilledIcon, HeartIcon } from "./icons/theme";
 export { MasterCardIcon, PayPalIcon, VisaCardIcon } from "./icons/payment";
+export { CartIcon, DeliveryIcon } from "./icons/e-commerce";
 export {
     MailIcon,
     SearchIcon,
@@ -36,5 +37,6 @@ export {
     ThumbsDownIcon,
     EmojiIcon,
     ArrowUpIcon,
-    SquareIcon
+    UploadIcon,
+    SquareIcon,
 } from "./core-icons";
