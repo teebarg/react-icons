@@ -35,8 +35,10 @@ export {
     CopyIcon,
     ThumbsUpIcon,
     ThumbsDownIcon,
-    EmojiIcon,
     ArrowUpIcon,
+    EmojiIcon,
+    FavouriteIcon,
+    MinusIcon,
     UploadIcon,
     SquareIcon,
 } from "./core-icons";
