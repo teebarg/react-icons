@@ -23,3 +23,30 @@ export const DeliveryIcon = ({ height = "24", width = "24", ...props }: IconSvgP
         </svg>
     );
 };
+
+export const PackageIcon = ({ height = "24", width = "24", ...props }: IconSvgProps) => {
+    return (
+        <svg viewBox="0 0 24 24" fill="none" width={width} height={height} {...props}>
+            <path
+                d="M3 9L12 2L21 9V21C21 21.55 20.55 22 20 22H4C3.45 22 3 21.55 3 21V9Z"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path d="M3 9L12 16L21 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M12 22V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+    );
+};
+
+export const TruckIcon = ({ height = "24", width = "24", ...props }: IconSvgProps) => {
+    return (
+        <svg viewBox="0 0 24 24" fill="none" width={width} height={height} {...props}>
+            <path d="M1 3H16V16H1V3Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M16 8H22L21 16H16V8Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="5.5" cy="18.5" r="2.5" stroke="currentColor" strokeWidth="2" />
+            <circle cx="18.5" cy="18.5" r="2.5" stroke="currentColor" strokeWidth="2" />
+        </svg>
+    );
+};

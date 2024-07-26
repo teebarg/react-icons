@@ -488,3 +488,43 @@ export const FavouriteIcon = ({ size = 24, width, height, ...props }: IconSvgPro
         />
     </svg>
 );
+
+export const HomeIcon = ({ size = 24, width, height, ...props }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...props}>
+        <path
+            d="M3 9.5L12 3L21 9.5V19C21 19.55 20.55 20 20 20H4C3.45 20 3 19.55 3 19V9.5Z"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path d="M9 21V12H15V21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
+export const ArrowLeftIcon = ({ size = 24, width, height, ...props }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...props}>
+        <path d="M15 6L9 12L15 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+);
+
+export const RefreshCcw = ({ size = 24, width, height, ...props }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...props}>
+        <path d="M1 4V10H7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M23 20V14H17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path
+            d="M3.51 9A9 9 0 015.63 5.63 9 9 0 0112 3H13A9 9 0 0120.49 15"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M20.49 15A9 9 0 0118.37 18.37 9 9 0 0112 21H11A9 9 0 013.51 9"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+);
