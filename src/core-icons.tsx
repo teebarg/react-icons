@@ -593,3 +593,59 @@ export const Trash = ({ height = "20", width = "20", ...props }: IconSvgProps) =
         ></path>
     </svg>
 );
+
+export const InformationCircleSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path
+            fill="currentColor"
+            fillRule="evenodd"
+            d="M18 10a8 8 0 1 1-16.001 0A8 8 0 0 1 18 10Zm-7-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM9 9a.75.75 0 0 0 0 1.5h.253a.25.25 0 0 1 .244.304l-.459 2.066A1.75 1.75 0 0 0 10.747 15H11a.75.75 0 1 0 0-1.5h-.253a.25.25 0 0 1-.244-.304l.459-2.066A1.75 1.75 0 0 0 9.253 9H9Z"
+            clipRule="evenodd"
+        ></path>
+    </svg>
+);
+
+export const Spinner = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path
+            fill="currentColor"
+            d="M14.865 14.865c.437.437.441 1.154-.053 1.526A8 8 0 1 1 9.634 2.008c.618-.028 1.072.527 1.014 1.143-.059.615-.609 1.056-1.224 1.118a5.76 5.76 0 1 0 3.785 10.514c.514-.345 1.219-.355 1.656.082Z"
+        ></path>
+    </svg>
+);
+
+export const ArrowUpRightMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="m5.75 14.25 8.5-8.5m0 0h-7.5m7.5 0v7.5"
+        ></path>
+    </svg>
+);
+
+export const XMark = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5 15 15 5M5 5l10 10"></path>
+    </svg>
+);
+
+export const XMarkMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m6 14 8-8M6 6l8 8"></path>
+    </svg>
+);
+
+export const MagnifyingGlassMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="m16 16-3.464-3.464m0 0a5 5 0 1 0-7.072-7.072 5 5 0 0 0 7.072 7.072v0Z"
+        ></path>
+    </svg>
+);
