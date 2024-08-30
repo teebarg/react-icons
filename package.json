@@ -1,6 +1,6 @@
 {
     "name": "nui-react-icons",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "A collection of React icons created with TypeScript.",
     "types": "dist/index.d.ts",
     "main": "dist/index.js",
