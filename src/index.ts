@@ -1,6 +1,6 @@
 export { DiscordIcon, TwitterIcon, GithubIcon, FacebookIcon, YoutubeIcon, WhatsAppIcon } from "./icons/social";
 export { MoonFilledIcon, SunFilledIcon, HeartFilledIcon, HeartIcon } from "./icons/theme";
-export { MasterCardIcon, PayPalIcon, VisaCardIcon } from "./icons/payment";
+export { MasterCardIcon, PayPalIcon, VisaCardIcon, CreditCard } from "./icons/payment";
 export { CartIcon, DeliveryIcon, PackageIcon, TruckIcon } from "./icons/e-commerce";
 export {
     MailIcon,
@@ -13,12 +13,15 @@ export {
     ChevronDownIcon,
     ChevronRightIcon,
     AdminIcon,
+    ArrowRightOnRectangle,
     ArrowLeftIcon,
     ArrowUpIcon,
     AttachmentIcon,
     CalendarIcon,
     CancelIcon,
     CheckIcon,
+    CheckCircleSolid,
+    ChevronUpDown,
     ComponentsIcon,
     CopyIcon,
     DeleteIcon,
@@ -34,11 +37,14 @@ export {
     LocationIcon,
     MinusIcon,
     NotificationIcon,
+    PencilSquare,
+    Plus,
     ProfileIcon,
     RefreshCcw,
     RightArrowIcon,
     SquareIcon,
     StarIcon,
+    Trash,
     TemplateIcon,
     ThumbsDownIcon,
     ThumbsUpIcon,

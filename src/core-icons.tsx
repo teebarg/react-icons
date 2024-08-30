@@ -528,3 +528,68 @@ export const RefreshCcw = ({ size = 24, width, height, ...props }: IconSvgProps)
         />
     </svg>
 );
+
+export const CheckCircleSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path
+            fill="currentColor"
+            fillRule="evenodd"
+            d="M10 18a8 8 0 1 0 0-16.001A8 8 0 0 0 10 18Zm3.857-9.809a.75.75 0 1 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+            clipRule="evenodd"
+        ></path>
+    </svg>
+);
+
+export const ArrowRightOnRectangle = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M13.125 7.5V4.375A1.875 1.875 0 0 0 11.25 2.5h-5a1.875 1.875 0 0 0-1.875 1.875v11.25A1.875 1.875 0 0 0 6.25 17.5h5a1.875 1.875 0 0 0 1.875-1.875V12.5m2.5 0 2.5-2.5m0 0-2.5-2.5m2.5 2.5H7.5"
+        ></path>
+    </svg>
+);
+
+export const ChevronUpDown = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="m6 12.75 3.75 3.75 3.75-3.75m-7.5-6L9.75 3l3.75 3.75"
+        ></path>
+    </svg>
+);
+
+export const PencilSquare = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="m14.052 3.74 1.405-1.408a1.563 1.563 0 0 1 2.21 2.21l-8.849 8.85a3.75 3.75 0 0 1-1.58.941L5 15l.667-2.238a3.75 3.75 0 0 1 .941-1.58l7.444-7.443Zm0 0 2.198 2.197M15 11.667v3.958a1.875 1.875 0 0 1-1.875 1.875h-8.75A1.875 1.875 0 0 1 2.5 15.625v-8.75A1.875 1.875 0 0 1 4.375 5h3.958"
+        ></path>
+    </svg>
+);
+
+export const Plus = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10 3.75v12.5M16.25 10H3.75"></path>
+    </svg>
+);
+
+export const Trash = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="m12.283 7.5-.288 7.5m-3.99 0-.288-7.5m8.306-2.675c.285.043.569.09.852.138m-.852-.137-.89 11.568a1.875 1.875 0 0 1-1.87 1.73H6.737a1.875 1.875 0 0 1-1.87-1.73l-.89-11.569m12.046 0a40.08 40.08 0 0 0-2.898-.33m-10 .467c.283-.049.567-.095.852-.137m0 0a40.091 40.091 0 0 1 2.898-.33m6.25 0V3.73c0-.984-.758-1.804-1.742-1.834a43.3 43.3 0 0 0-2.766 0c-.984.03-1.742.851-1.742 1.834v.763m6.25 0c-2.08-.16-4.17-.16-6.25 0"
+        ></path>
+    </svg>
+);
