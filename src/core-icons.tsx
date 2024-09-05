@@ -107,9 +107,9 @@ export const ChevronDownIcon = ({ strokeWidth = 1.5, width = "1em", height = "1e
     </svg>
 );
 
-export const ChevronRightIcon = ({ strokeWidth = 1.5, width = "1em", height = "1em", ...otherProps }) => (
-    <svg width={width} height={height} viewBox="0 0 24 24" fill="none" {...otherProps}>
-        <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+export const ChevronRight = ({ strokeWidth = 1.5, width = "20", height = "20", ...otherProps }) => (
+    <svg width={width} height={height} {...otherProps} fill="none">
+        <path stroke="currentColor" strokeLinejoin="round" strokeLinecap="round" strokeWidth={strokeWidth} d="m6.875 3.75 6.25 6.25-6.25 6.25"></path>
     </svg>
 );
 
@@ -616,13 +616,7 @@ export const Spinner = ({ height = "20", width = "20", ...props }: IconSvgProps)
 
 export const ArrowUpRightMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
     <svg width={width} height={height} {...props} fill="none">
-        <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="1.5"
-            d="m5.75 14.25 8.5-8.5m0 0h-7.5m7.5 0v7.5"
-        ></path>
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m5.75 14.25 8.5-8.5m0 0h-7.5m7.5 0v7.5"></path>
     </svg>
 );
 
@@ -647,5 +641,57 @@ export const MagnifyingGlassMini = ({ height = "20", width = "20", ...props }: I
             strokeWidth="1.5"
             d="m16 16-3.464-3.464m0 0a5 5 0 1 0-7.072-7.072 5 5 0 0 0 7.072 7.072v0Z"
         ></path>
+    </svg>
+);
+
+export const ArrowUpMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m5 9 5-5m0 0 5 5m-5-5v12"></path>
+    </svg>
+);
+
+export const ChatBubble = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M7.188 8.125h-.313m3.438 0H10m3.438 0h-.313m-5.938 0a.312.312 0 1 1-.624 0 .312.312 0 0 1 .625 0v0Zm3.125 0a.312.312 0 1 1-.624 0 .312.312 0 0 1 .624 0v0Zm3.126 0a.312.312 0 1 1-.625 0 .312.312 0 0 1 .624 0v0ZM1.874 10.633c0 1.334.936 2.495 2.256 2.69.906.133 1.82.235 2.744.307v3.87l3.487-3.486a.95.95 0 0 1 .648-.276 40.242 40.242 0 0 0 4.858-.415c1.321-.195 2.257-1.356 2.257-2.69V5.618c0-1.336-.936-2.496-2.256-2.69A40.329 40.329 0 0 0 10 2.5c-1.993 0-3.953.146-5.87.428-1.32.194-2.255 1.355-2.255 2.69V10.633Z"
+        ></path>
+    </svg>
+);
+
+export const ChatBubbleLeftRight = ({ height = "24", width = "24", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+        />
+    </svg>
+);
+
+export const ChatBubbleLeftRightSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} fill="none">
+        <path
+            fill="currentColor"
+            d="M4.094 2.215a41.058 41.058 0 0 1 10.562 0c1.602.208 2.742 1.55 2.837 3.106a3.67 3.67 0 0 0-.86-.176 42.408 42.408 0 0 0-7.016 0C7.652 5.308 6.25 6.97 6.25 8.84v3.572a3.725 3.725 0 0 0 2.027 3.32l-2.21 2.21A.625.625 0 0 1 5 17.5v-3.358a40.495 40.495 0 0 1-.906-.107c-1.673-.218-2.844-1.674-2.844-3.317V5.532c0-1.642 1.17-3.1 2.844-3.317Z"
+        ></path>
+        <path
+            fill="currentColor"
+            d="M13.125 6.25c-1.147 0-2.283.048-3.405.14-1.283.107-2.22 1.196-2.22 2.45v3.572c0 1.255.94 2.345 2.225 2.45 1.036.085 2.083.13 3.14.137l2.318 2.318a.625.625 0 0 0 1.067-.442v-1.992l.275-.021c1.285-.104 2.225-1.194 2.225-2.45V8.84c0-1.254-.938-2.343-2.22-2.45a41.163 41.163 0 0 0-3.405-.14Z"
+        ></path>
+    </svg>
+);
+
+export const Bot = ({ height = "64", width = "64", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} viewBox="0 0 64 64">
+        <rect x="12" y="20" width="40" height="32" rx="8" ry="8" fill="#4CAF50" />
+        <rect x="18" y="26" width="12" height="12" rx="6" ry="6" fill="#FFFFFF" />
+        <rect x="34" y="26" width="12" height="12" rx="6" ry="6" fill="#FFFFFF" />
+        <rect x="26" y="46" width="12" height="4" fill="#FFFFFF" rx="2" ry="2" />
+        <line x1="32" y1="12" x2="32" y2="20" stroke="#4CAF50" strokeWidth="4" strokeLinecap="round" />
+        <circle cx="32" cy="8" r="4" fill="#4CAF50" />
     </svg>
 );
