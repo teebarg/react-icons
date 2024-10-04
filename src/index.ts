@@ -19,6 +19,7 @@ export {
     ArrowLeftIcon,
     ArrowUpIcon,
     AttachmentIcon,
+    Bell,
     Bot,
     CalendarIcon,
     CancelIcon,
