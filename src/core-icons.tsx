@@ -58,24 +58,6 @@ export const MinusIcon = ({ size = 24, width, height, ...props }: IconSvgProps) 
     </svg>
 );
 
-export const PlusIcon = ({ size = 24, width, height, ...props }: IconSvgProps) => (
-    <svg
-        aria-hidden="true"
-        fill="none"
-        focusable="false"
-        height={size || height}
-        role="presentation"
-        viewBox="0 0 24 24"
-        width={size || width}
-        {...props}
-    >
-        <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}>
-            <path d="M6 12h12" />
-            <path d="M12 18V6" />
-        </g>
-    </svg>
-);
-
 export const VerticalDotsIcon = ({ size = 24, width, height, ...props }: IconSvgProps) => (
     <svg
         aria-hidden="true"
@@ -94,16 +76,15 @@ export const VerticalDotsIcon = ({ size = 24, width, height, ...props }: IconSvg
     </svg>
 );
 
-export const ChevronDownIcon = ({ strokeWidth = 1.5, width = "1em", height = "1em", ...otherProps }) => (
-    <svg aria-hidden="true" fill="none" focusable="false" height={height} role="presentation" viewBox="0 0 24 24" width={width} {...otherProps}>
+export const ChevronDown = ({ strokeWidth = "1.5", width = "20", height = "20", ...props }) => (
+    <svg fill="none" width={width} {...props} height={height}>
         <path
-            d="m19.92 8.95-6.52 6.52c-.77.77-2.03.77-2.8 0L4.08 8.95"
             stroke="currentColor"
             strokeLinecap="round"
             strokeLinejoin="round"
-            strokeMiterlimit={10}
             strokeWidth={strokeWidth}
-        />
+            d="M16.25 6.875 10 13.125l-6.25-6.25"
+        ></path>
     </svg>
 );
 
@@ -731,6 +712,89 @@ export const Bot = ({ height = "64", width = "64", ...props }: IconSvgProps) => 
     </svg>
 );
 
+export const DotsSix = ({ height = "24px", width = "24px", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} viewBox="0 0 20 20" fill="none">
+        <path
+            d="M7.5 10.75C7.91421 10.75 8.25 10.4142 8.25 10C8.25 9.58579 7.91421 9.25 7.5 9.25C7.08579 9.25 6.75 9.58579 6.75 10C6.75 10.4142 7.08579 10.75 7.5 10.75Z"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M7.5 5.75C7.91421 5.75 8.25 5.41421 8.25 5C8.25 4.58579 7.91421 4.25 7.5 4.25C7.08579 4.25 6.75 4.58579 6.75 5C6.75 5.41421 7.08579 5.75 7.5 5.75Z"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M7.5 15.75C7.91421 15.75 8.25 15.4142 8.25 15C8.25 14.5858 7.91421 14.25 7.5 14.25C7.08579 14.25 6.75 14.5858 6.75 15C6.75 15.4142 7.08579 15.75 7.5 15.75Z"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M12.5 10.75C12.9142 10.75 13.25 10.4142 13.25 10C13.25 9.58579 12.9142 9.25 12.5 9.25C12.0858 9.25 11.75 9.58579 11.75 10C11.75 10.4142 12.0858 10.75 12.5 10.75Z"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M12.5 5.75C12.9142 5.75 13.25 5.41421 13.25 5C13.25 4.58579 12.9142 4.25 12.5 4.25C12.0858 4.25 11.75 4.58579 11.75 5C11.75 5.41421 12.0858 5.75 12.5 5.75Z"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M12.5 15.75C12.9142 15.75 13.25 15.4142 13.25 15C13.25 14.5858 12.9142 14.25 12.5 14.25C12.0858 14.25 11.75 14.5858 11.75 15C11.75 15.4142 12.0858 15.75 12.5 15.75Z"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+);
+
+export const EllipsisHorizontal = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} viewBox="0 0 20 20" fill="none">
+        <path
+            d="M10 10.75C10.4142 10.75 10.75 10.4142 10.75 10C10.75 9.58579 10.4142 9.25 10 9.25C9.58579 9.25 9.25 9.58579 9.25 10C9.25 10.4142 9.58579 10.75 10 10.75Z"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M15.833 10.75C16.2472 10.75 16.583 10.4142 16.583 10C16.583 9.58579 16.2472 9.25 15.833 9.25C15.4188 9.25 15.083 9.58579 15.083 10C15.083 10.4142 15.4188 10.75 15.833 10.75Z"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+        <path
+            d="M4.16699 10.75C4.58121 10.75 4.91699 10.4142 4.91699 10C4.91699 9.58579 4.58121 9.25 4.16699 9.25C3.75278 9.25 3.41699 9.58579 3.41699 10C3.41699 10.4142 3.75278 10.75 4.16699 10.75Z"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+);
+
+export const EllipsisVertical = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeWidth="1.5"
+            d="M10 3.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Zm0 5.5a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5Zm.53 5.72a.75.75 0 1 1-1.06 1.06.75.75 0 0 1 1.06-1.06Z"
+        ></path>
+    </svg>
+);
+
 export const Excel = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
     <svg fill="none" width={width} height={height} {...props} viewBox="0 0 20 20">
         <path
@@ -756,5 +820,41 @@ export const Excel = ({ height = "20", width = "20", ...props }: IconSvgProps) =
         />
         <path d="M10.833 13.75H3.33301" stroke="#2DD4BF" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" />
         <path d="M7.08301 10V17.5" stroke="#2DD4BF" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" />
+    </svg>
+);
+
+export const Folder = ({ height = "18", width = "18", ...props }: IconSvgProps) => (
+    <svg width={width} height={height} {...props} viewBox="0 0 20 20" fill="none">
+        <path
+            d="M3.49557 8.24663C3.58387 8.23322 3.67454 8.22613 3.76678 8.22613H16.2328C16.325 8.22613 16.4157 8.23322 16.504 8.24663M3.49557 8.24663C3.03418 8.31808 2.61956 8.56856 2.34165 8.94373C2.06373 9.31891 1.94494 9.78852 2.01103 10.2507L2.68668 14.9811C2.74703 15.4037 2.95781 15.7905 3.28032 16.0703C3.60284 16.3501 4.01546 16.5041 4.44243 16.5042H15.5579C15.9849 16.5041 16.3975 16.3501 16.72 16.0703C17.0426 15.7905 17.2533 15.4037 17.3137 14.9811L17.9893 10.2507C18.0554 9.78852 17.9366 9.31891 17.6587 8.94373C17.3808 8.56856 16.9654 8.31808 16.504 8.24663M3.49557 8.24663L3.49636 5.26967C3.49636 4.79934 3.68314 4.34827 4.01564 4.01562C4.34813 3.68298 4.79912 3.496 5.26945 3.49579H8.32761C8.64115 3.49606 8.94174 3.62084 9.16331 3.84268L10.8363 5.51407C11.0578 5.73591 11.3584 5.86068 11.672 5.86096H14.7301C15.2006 5.86096 15.6518 6.04785 15.9844 6.38051C16.3171 6.71318 16.504 7.16437 16.504 7.63484V8.24663"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+);
+
+export const Tag = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M7.973 2.5H4.375A1.875 1.875 0 0 0 2.5 4.375v3.598c0 .498.197.975.55 1.326l7.983 7.984c.583.583 1.484.727 2.173.275a15.078 15.078 0 0 0 4.352-4.352c.452-.69.308-1.59-.275-2.173L9.3 3.05a1.875 1.875 0 0 0-1.327-.55Z"
+        ></path>
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 6h.006v.006H6V6Z"></path>
+    </svg>
+);
+
+export const TagSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            fill="currentColor"
+            fillRule="evenodd"
+            d="M4.782 2A2.782 2.782 0 0 0 2 4.782v3.204c0 .737.293 1.444.815 1.966l7.233 7.233a2.782 2.782 0 0 0 3.934 0l3.203-3.203a2.784 2.784 0 0 0 0-3.934L9.952 2.815A2.782 2.782 0 0 0 7.987 2H4.782Zm.556 4.451a1.113 1.113 0 1 0 0-2.226 1.113 1.113 0 0 0 0 2.226Z"
+            clipRule="evenodd"
+        ></path>
     </svg>
 );
