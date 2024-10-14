@@ -88,9 +88,21 @@ export const ChevronDown = ({ strokeWidth = "1.5", width = "20", height = "20", 
     </svg>
 );
 
-export const ChevronRight = ({ strokeWidth = 1.5, width = "20", height = "20", ...otherProps }) => (
-    <svg width={width} height={height} {...otherProps} fill="none">
+export const ChevronDownMini = ({ strokeWidth = "1.5", width = "20", height = "20", ...props }) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth} d="m15 8-5 5-5-5"></path>
+    </svg>
+);
+
+export const ChevronRight = ({ strokeWidth = 1.5, width = "20", height = "20", ...props }) => (
+    <svg width={width} height={height} {...props} fill="none">
         <path stroke="currentColor" strokeLinejoin="round" strokeLinecap="round" strokeWidth={strokeWidth} d="m6.875 3.75 6.25 6.25-6.25 6.25"></path>
+    </svg>
+);
+
+export const ChevronRightMini = ({ strokeWidth = 1.5, width = "20", height = "20", ...props }) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path stroke="currentColor" strokeLinejoin="round" strokeLinecap="round" strokeWidth={strokeWidth} d="m8 6 4 4-4 4"></path>
     </svg>
 );
 
@@ -553,6 +565,19 @@ export const PencilSquare = ({ height = "20", width = "20", ...props }: IconSvgP
             strokeLinejoin="round"
             strokeWidth="1.5"
             d="m14.052 3.74 1.405-1.408a1.563 1.563 0 0 1 2.21 2.21l-8.849 8.85a3.75 3.75 0 0 1-1.58.941L5 15l.667-2.238a3.75 3.75 0 0 1 .941-1.58l7.444-7.443Zm0 0 2.198 2.197M15 11.667v3.958a1.875 1.875 0 0 1-1.875 1.875h-8.75A1.875 1.875 0 0 1 2.5 15.625v-8.75A1.875 1.875 0 0 1 4.375 5h3.958"
+        ></path>
+    </svg>
+);
+
+export const PencilSquareSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            fill="currentColor"
+            d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 1 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65v-.001Z"
+        ></path>
+        <path
+            fill="currentColor"
+            d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 1 0 10 3H4.75A2.75 2.75 0 0 0 2 5.75v9.5A2.75 2.75 0 0 0 4.75 18h9.5A2.75 2.75 0 0 0 17 15.25V10a.75.75 0 1 0-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5Z"
         ></path>
     </svg>
 );
