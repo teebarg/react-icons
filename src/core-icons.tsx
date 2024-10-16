@@ -737,6 +737,18 @@ export const Bot = ({ height = "64", width = "64", ...props }: IconSvgProps) => 
     </svg>
 );
 
+export const Check = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m3.75 10.625 5 5 7.5-11.25"></path>
+    </svg>
+);
+
+export const CheckMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m5.833 10.417 3.334 3.333 5-7.5"></path>
+    </svg>
+);
+
 export const DotsSix = ({ height = "24px", width = "24px", ...props }: IconSvgProps) => (
     <svg width={width} {...props} height={height} viewBox="0 0 20 20" fill="none">
         <path
