@@ -737,6 +737,50 @@ export const Bot = ({ height = "64", width = "64", ...props }: IconSvgProps) => 
     </svg>
 );
 
+export const Calendar = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M5.625 2.5v1.875m8.75-1.875v1.875M2.5 15.625V6.25a1.875 1.875 0 0 1 1.875-1.875h11.25A1.875 1.875 0 0 1 17.5 6.25v9.375m-15 0A1.875 1.875 0 0 0 4.375 17.5h11.25a1.875 1.875 0 0 0 1.875-1.875m-15 0v-6.25A1.875 1.875 0 0 1 4.375 7.5h11.25A1.875 1.875 0 0 1 17.5 9.375v6.25m-7.5-5h.007v.007H10v-.007Zm0 1.875h.007v.007H10V12.5Zm0 1.875h.007v.007H10v-.007ZM8.125 12.5h.007v.007h-.007V12.5Zm0 1.875h.007v.007h-.007v-.007ZM6.25 12.5h.007v.007H6.25V12.5Zm0 1.875h.007v.007H6.25v-.007Zm5.625-3.75h.007v.007h-.007v-.007Zm0 1.875h.007v.007h-.007V12.5Zm0 1.875h.007v.007h-.007v-.007Zm1.875-3.75h.007v.007h-.007v-.007Zm0 1.875h.007v.007h-.007V12.5Z"
+        ></path>
+    </svg>
+);
+
+export const CalendarMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M6.5 4v1.5m7-1.5v1.5m-9.5 9V7a1.5 1.5 0 0 1 1.5-1.5h9A1.5 1.5 0 0 1 16 7v7.5m-12 0A1.5 1.5 0 0 0 5.5 16h9a1.5 1.5 0 0 0 1.5-1.5m-12 0v-5A1.5 1.5 0 0 1 5.5 8h9A1.5 1.5 0 0 1 16 9.5v5"
+        ></path>
+        <path
+            stroke="currentColor"
+            strokeWidth="0.75"
+            d="M7.875 10.868a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM7.875 13.194a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM12.875 10.868a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM10.375 10.868a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM10.375 13.194a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+        ></path>
+    </svg>
+);
+
+export const CalendarSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            fill="currentColor"
+            d="M10.625 10.625a.624.624 0 1 1-1.249 0 .624.624 0 0 1 1.249 0Zm-4.375 2.5a.625.625 0 1 0 0-1.25.625.625 0 0 0 0 1.25Zm.625 1.25a.625.625 0 1 1-1.25 0 .625.625 0 0 1 1.25 0Zm1.25-1.25a.625.625 0 1 0 0-1.25.625.625 0 0 0 0 1.25Zm.625 1.25a.625.625 0 1 1-1.25 0 .625.625 0 0 1 1.25 0Zm1.25-1.25a.624.624 0 1 0 0-1.249.624.624 0 0 0 0 1.249Zm.625 1.25a.624.624 0 1 1-1.249 0 .624.624 0 0 1 1.249 0Zm1.25-1.25a.624.624 0 1 0 0-1.249.624.624 0 0 0 0 1.249Zm.625 1.25a.624.624 0 1 1-1.249 0 .624.624 0 0 1 1.249 0Zm1.25-1.25a.624.624 0 1 0 0-1.249.624.624 0 0 0 0 1.249Zm-1.25-2.5a.624.624 0 1 1-1.249 0 .624.624 0 0 1 1.249 0Zm1.25.625a.624.624 0 1 0 0-1.249.624.624 0 0 0 0 1.249Z"
+        ></path>
+        <path
+            fill="currentColor"
+            fillRule="evenodd"
+            d="M5.625 1.875a.625.625 0 0 1 .625.625v1.25h7.5V2.5a.625.625 0 1 1 1.25 0v1.25h.625a2.5 2.5 0 0 1 2.5 2.5v9.375a2.5 2.5 0 0 1-2.5 2.5H4.375a2.5 2.5 0 0 1-2.5-2.5V6.25a2.5 2.5 0 0 1 2.5-2.5H5V2.5a.625.625 0 0 1 .625-.625Zm11.25 7.5a1.25 1.25 0 0 0-1.25-1.25H4.375a1.25 1.25 0 0 0-1.25 1.25v6.25a1.25 1.25 0 0 0 1.25 1.25h11.25a1.25 1.25 0 0 0 1.25-1.25v-6.25Z"
+            clipRule="evenodd"
+        ></path>
+    </svg>
+);
+
 export const Check = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
     <svg width={width} {...props} height={height} fill="none">
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m3.75 10.625 5 5 7.5-11.25"></path>
@@ -746,6 +790,100 @@ export const Check = ({ height = "20", width = "20", ...props }: IconSvgProps) =
 export const CheckMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
     <svg width={width} {...props} height={height} fill="none">
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m5.833 10.417 3.334 3.333 5-7.5"></path>
+    </svg>
+);
+
+export const Component = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M5.125 7.375 7.75 10l-2.625 2.625L2.5 10l2.625-2.625ZM10 2.5l2.625 2.625L10 7.75 7.375 5.125 10 2.5ZM14.875 7.375 17.5 10l-2.625 2.625L12.25 10l2.625-2.625ZM10 12.25l2.625 2.625L10 17.5l-2.625-2.625L10 12.25Z"
+        ></path>
+    </svg>
+);
+
+export const ComponentSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            fill="currentColor"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M5.125 7.375 7.75 10l-2.625 2.625L2.5 10l2.625-2.625ZM10 2.5l2.625 2.625L10 7.75 7.375 5.125 10 2.5ZM14.875 7.375 17.5 10l-2.625 2.625L12.25 10l2.625-2.625ZM10 12.25l2.625 2.625L10 17.5l-2.625-2.625L10 12.25Z"
+        ></path>
+    </svg>
+);
+
+export const CogSixTooth = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M7.995 3.283A.938.938 0 0 1 8.92 2.5h2.16c.46 0 .85.332.926.783l.177 1.068c.053.311.261.572.538.725.062.033.122.069.183.106.27.163.6.214.896.103l1.014-.38a.937.937 0 0 1 1.142.408l1.08 1.873a.937.937 0 0 1-.217 1.192l-.836.69c-.244.2-.365.51-.359.826.002.071.002.142 0 .213-.006.315.115.625.359.825l.837.69a.938.938 0 0 1 .217 1.191l-1.082 1.873a.938.938 0 0 1-1.14.409l-1.015-.38a1.039 1.039 0 0 0-.897.103c-.06.037-.121.073-.183.107a1.04 1.04 0 0 0-.537.724l-.177 1.067a.938.938 0 0 1-.925.784H8.919a.938.938 0 0 1-.925-.783l-.177-1.068a1.037 1.037 0 0 0-.537-.725 5.398 5.398 0 0 1-.183-.106c-.271-.163-.6-.214-.897-.103l-1.014.38a.938.938 0 0 1-1.14-.408l-1.082-1.873a.938.938 0 0 1 .217-1.192l.837-.69c.243-.2.364-.51.358-.826a5.788 5.788 0 0 1 0-.213 1.034 1.034 0 0 0-.358-.825l-.837-.69a.938.938 0 0 1-.217-1.191l1.081-1.873a.938.938 0 0 1 1.142-.409l1.013.38c.297.11.626.06.897-.103.06-.037.121-.073.183-.107.277-.152.485-.413.537-.724l.178-1.068v0Z"
+        ></path>
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M12.5 10a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0v0Z"
+        ></path>
+    </svg>
+);
+
+export const DocumentSeries = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M13.125 14.375v2.813c0 .517-.42.937-.938.937H4.063a.938.938 0 0 1-.938-.938V6.563c0-.517.42-.937.938-.937h1.562c.419 0 .837.034 1.25.103m6.25 8.647h2.813c.517 0 .937-.42.937-.938V9.375a7.502 7.502 0 0 0-7.5-7.5H7.812a.938.938 0 0 0-.937.938v2.915m6.25 8.647H7.812a.938.938 0 0 1-.937-.938V5.729m10 5.522V9.687a2.812 2.812 0 0 0-2.813-2.812h-1.25a.937.937 0 0 1-.937-.938v-1.25a2.811 2.811 0 0 0-2.813-2.812h-.937"
+        ></path>
+    </svg>
+);
+
+export const DocumentText = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M16.25 11.846V9.692c0-.734-.296-1.438-.824-1.958a2.835 2.835 0 0 0-1.989-.81h-1.25a.945.945 0 0 1-.662-.271A.916.916 0 0 1 11.25 6V4.77c0-.735-.296-1.44-.824-1.959A2.835 2.835 0 0 0 8.437 2H6.875m0 10.461h6.25m-6.25 2.462H10M8.75 2H4.687a.93.93 0 0 0-.937.923v14.154c0 .51.42.923.938.923h10.625a.93.93 0 0 0 .937-.923V9.385c0-1.959-.79-3.837-2.197-5.222A7.56 7.56 0 0 0 8.75 2v0Z"
+        ></path>
+    </svg>
+);
+
+export const DocumentTextSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            fill="currentColor"
+            fillRule="evenodd"
+            d="M4.915 1.625c-.826 0-1.495.67-1.495 1.496v13.758c0 .826.67 1.496 1.495 1.496h10.17c.825 0 1.495-.67 1.495-1.495v-6.282a2.99 2.99 0 0 0-2.99-2.99h-1.496a1.495 1.495 0 0 1-1.496-1.496V4.616a2.991 2.991 0 0 0-2.99-2.991H4.914Zm1.496 10.768a.598.598 0 0 1 .598-.598h5.982a.598.598 0 0 1 0 1.196H7.01a.599.599 0 0 1-.598-.598Zm.598 1.794a.598.598 0 1 0 0 1.197H10a.598.598 0 1 0 0-1.197H7.009Z"
+            clipRule="evenodd"
+        ></path>
+        <path
+            fill="currentColor"
+            d="M10.774 1.877a4.171 4.171 0 0 1 1.02 2.74v1.495a.3.3 0 0 0 .3.299h1.495a4.172 4.172 0 0 1 2.74 1.02 7.792 7.792 0 0 0-5.555-5.554Z"
+        ></path>
+    </svg>
+);
+
+export const CogSixToothSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            fill="currentColor"
+            fillRule="evenodd"
+            d="M9.232 1.875c-.765 0-1.416.553-1.542 1.306l-.148.893c-.017.1-.096.217-.248.29-.285.137-.56.296-.822.475-.138.096-.278.105-.375.07L5.25 4.59a1.563 1.563 0 0 0-1.902.683l-.768 1.33a1.563 1.563 0 0 0 .36 1.988l.7.577c.08.065.142.19.128.358a6.334 6.334 0 0 0 0 .949c.013.167-.049.293-.127.358l-.701.577a1.562 1.562 0 0 0-.36 1.988l.768 1.33a1.562 1.562 0 0 0 1.902.682l.85-.318c.095-.036.235-.026.374.068.26.178.534.338.821.475.152.073.23.19.247.292l.149.892a1.563 1.563 0 0 0 1.541 1.306h1.537c.764 0 1.416-.552 1.542-1.306l.148-.893c.017-.1.095-.217.248-.291.286-.137.56-.297.82-.475.14-.095.28-.104.376-.068l.85.318a1.562 1.562 0 0 0 1.9-.683l.769-1.33a1.563 1.563 0 0 0-.36-1.988l-.7-.577c-.08-.065-.142-.19-.129-.358a6.345 6.345 0 0 0 0-.949c-.013-.167.05-.293.128-.358l.7-.577c.59-.485.742-1.325.36-1.987l-.768-1.331a1.562 1.562 0 0 0-1.901-.682l-.85.318c-.095.036-.235.026-.374-.069a6.246 6.246 0 0 0-.821-.475c-.153-.072-.231-.189-.248-.29l-.149-.893a1.563 1.563 0 0 0-1.542-1.306H9.232ZM10 13.125a3.125 3.125 0 1 0 0-6.25 3.125 3.125 0 0 0 0 6.25Z"
+            clipRule="evenodd"
+        ></path>
     </svg>
 );
 
@@ -892,6 +1030,75 @@ export const TagSolid = ({ height = "20", width = "20", ...props }: IconSvgProps
             fillRule="evenodd"
             d="M4.782 2A2.782 2.782 0 0 0 2 4.782v3.204c0 .737.293 1.444.815 1.966l7.233 7.233a2.782 2.782 0 0 0 3.934 0l3.203-3.203a2.784 2.784 0 0 0 0-3.934L9.952 2.815A2.782 2.782 0 0 0 7.987 2H4.782Zm.556 4.451a1.113 1.113 0 1 0 0-2.226 1.113 1.113 0 0 0 0 2.226Z"
             clipRule="evenodd"
+        ></path>
+    </svg>
+);
+
+export const User = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M12.909 5.346a2.909 2.909 0 1 1-5.818 0 2.909 2.909 0 0 1 5.818 0v0Zm-8.726 10.95a5.818 5.818 0 0 1 11.633 0A13.91 13.91 0 0 1 10 17.564c-2.076 0-4.046-.453-5.817-1.266Z"
+        ></path>
+    </svg>
+);
+
+export const UserCircleMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M12.5 6a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM5 15.412a5 5 0 0 1 10 0 11.956 11.956 0 0 1-5 1.088c-1.784 0-3.477-.39-5-1.088Z"
+        ></path>
+    </svg>
+);
+
+export const UserGroup = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M14.216 12.934a2.5 2.5 0 0 1 3.902 2.267c-1 .35-2.062.485-3.118.399a4.996 4.996 0 0 0-5-4.975 4.996 4.996 0 0 0-4.215 2.31m9.214 2.664.001.026c0 .188-.01.373-.03.555A9.953 9.953 0 0 1 10 17.5a9.952 9.952 0 0 1-4.97-1.32A5.052 5.052 0 0 1 5 15.6m0 0a7.484 7.484 0 0 1-3.116-.398 2.5 2.5 0 0 1 3.901-2.267M5 15.599a4.977 4.977 0 0 1 .785-2.664m6.715-7.31a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm5 2.5a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm-11.25 0a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Z"
+        ></path>
+    </svg>
+);
+
+export const Users = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M12.5 15.94c.71.206 1.447.31 2.188.31a7.782 7.782 0 0 0 3.434-.793 3.438 3.438 0 0 0-6.278-2.078m.656 2.561v-.002c0-.928-.237-1.8-.655-2.559m.655 2.561v.088A10.265 10.265 0 0 1 7.187 17.5c-1.943 0-3.76-.538-5.312-1.472v-.09a5.312 5.312 0 0 1 9.97-2.559M10 5.313a2.812 2.812 0 1 1-5.625 0 2.812 2.812 0 0 1 5.625 0v0Zm6.875 1.875a2.188 2.188 0 1 1-4.375 0 2.188 2.188 0 0 1 4.375 0v0Z"
+        ></path>
+    </svg>
+);
+
+export const UsersSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            fill="currentColor"
+            d="M4.018 5.513a3.29 3.29 0 1 1 6.58 0 3.29 3.29 0 0 1-6.58 0Zm7.776 1.795a2.692 2.692 0 1 1 5.384 0 2.692 2.692 0 0 1-5.384 0ZM1.625 15.683a5.683 5.683 0 0 1 11.366 0v.097a.598.598 0 0 1-.29.503 10.423 10.423 0 0 1-5.393 1.494c-1.972 0-3.817-.546-5.392-1.494a.598.598 0 0 1-.29-.503l-.001-.097Zm12.562.002v.115a1.794 1.794 0 0 1-.186.766 8.047 8.047 0 0 0 4.036-.806.6.6 0 0 0 .335-.513 3.89 3.89 0 0 0-5.55-3.677 6.848 6.848 0 0 1 1.365 4.113v.002Z"
+        ></path>
+    </svg>
+);
+
+export const Window = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
+    <svg width={width} {...props} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M2.5 6.875V15a1.875 1.875 0 0 0 1.875 1.875h11.25A1.875 1.875 0 0 0 17.5 15V6.875m-15 0V5a1.875 1.875 0 0 1 1.875-1.875h11.25A1.875 1.875 0 0 1 17.5 5v1.875m-15 0h15M4.375 5h.007v.007h-.007V5ZM6.25 5h.007v.007H6.25V5Zm1.875 0h.007v.007h-.007V5Z"
         ></path>
     </svg>
 );
