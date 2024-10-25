@@ -557,6 +557,30 @@ export const ChevronUpDown = ({ height = "20", width = "20", ...props }: IconSvg
     </svg>
 );
 
+export const PenPlus = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M2.389 13.5s3.199-.505 4.04-1.347c.843-.841 6.514-6.513 6.514-6.513a1.904 1.904 0 1 0-2.694-2.693L3.736 9.46c-.841.842-1.346 4.04-1.346 4.04zM3.278 1.056V5.5M5.5 3.278H1.056"
+        ></path>
+    </svg>
+);
+
+export const Pencil = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="m11.903 6.236.985-.986c.521-.52.521-1.365 0-1.885l-1.252-1.253a1.333 1.333 0 0 0-1.885 0l-.986.986zM7.43 4.43 3.187 8.676c-.222.222-.381.5-.462.804l-1.002 3.798 3.798-1.002c.304-.08.582-.24.804-.462l4.244-4.245M8.986 5.986 5.07 9.904"
+        ></path>
+    </svg>
+);
+
 export const PencilSquare = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
     <svg width={width} height={height} {...props} fill="none">
         <path
@@ -1030,6 +1054,42 @@ export const TagSolid = ({ height = "20", width = "20", ...props }: IconSvgProps
             fillRule="evenodd"
             d="M4.782 2A2.782 2.782 0 0 0 2 4.782v3.204c0 .737.293 1.444.815 1.966l7.233 7.233a2.782 2.782 0 0 0 3.934 0l3.203-3.203a2.784 2.784 0 0 0 0-3.934L9.952 2.815A2.782 2.782 0 0 0 7.987 2H4.782Zm.556 4.451a1.113 1.113 0 1 0 0-2.226 1.113 1.113 0 0 0 0 2.226Z"
             clipRule="evenodd"
+        ></path>
+    </svg>
+);
+
+export const TriangleDownMini = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            fill="currentColor"
+            d="M10.09 5c.163 0 .323.037.463.108.14.07.256.172.335.293a.7.7 0 0 1 .111.397.7.7 0 0 1-.141.39l-2.59 3.454a.9.9 0 0 1-.33.263 1.04 1.04 0 0 1-.876 0 .9.9 0 0 1-.33-.263l-2.59-3.455A.7.7 0 0 1 4 5.797a.7.7 0 0 1 .112-.396.85.85 0 0 1 .335-.293c.14-.07.3-.108.463-.108z"
+        ></path>
+    </svg>
+);
+
+export const TriangleLeftMini = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            fill="currentColor"
+            d="M10 10.09c0 .163-.037.323-.108.463a.85.85 0 0 1-.293.335.7.7 0 0 1-.397.111.7.7 0 0 1-.39-.141l-3.454-2.59a.9.9 0 0 1-.263-.33 1.04 1.04 0 0 1 0-.876.9.9 0 0 1 .263-.33l3.455-2.59A.7.7 0 0 1 9.203 4a.7.7 0 0 1 .396.112.85.85 0 0 1 .293.335c.07.14.108.3.108.463z"
+        ></path>
+    </svg>
+);
+
+export const TriangleRightMini = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            fill="currentColor"
+            d="M5 4.91c0-.163.037-.323.108-.464a.85.85 0 0 1 .293-.334A.7.7 0 0 1 5.798 4a.7.7 0 0 1 .39.142l3.454 2.59c.11.082.2.195.263.33a1.04 1.04 0 0 1 0 .876.9.9 0 0 1-.263.33l-3.455 2.59a.7.7 0 0 1-.39.141.7.7 0 0 1-.396-.111.85.85 0 0 1-.293-.335c-.07-.14-.108-.3-.108-.464z"
+        ></path>
+    </svg>
+);
+
+export const TriangleUpMini = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            fill="currentColor"
+            d="M4.91 10c-.163 0-.323-.037-.464-.108a.85.85 0 0 1-.334-.293A.7.7 0 0 1 4 9.202a.7.7 0 0 1 .142-.39l2.59-3.454c.082-.11.195-.2.33-.263a1.04 1.04 0 0 1 .876 0 .9.9 0 0 1 .33.263l2.59 3.455a.7.7 0 0 1 .141.39.7.7 0 0 1-.111.396.85.85 0 0 1-.335.293c-.14.07-.3.108-.464.108z"
         ></path>
     </svg>
 );
