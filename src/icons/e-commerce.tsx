@@ -1,7 +1,7 @@
 import * as React from "react";
 import { IconSvgProps } from "../types";
 
-export const CartIcon = ({ height = "24", width = "24", ...props }: IconSvgProps) => {
+export const Cart = ({ height = "24", width = "24", ...props }: IconSvgProps) => {
     return (
         <svg aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" width={width} height={height} {...props}>
             <path
@@ -12,7 +12,7 @@ export const CartIcon = ({ height = "24", width = "24", ...props }: IconSvgProps
     );
 };
 
-export const DeliveryIcon = ({ height = "24", width = "24", ...props }: IconSvgProps) => {
+export const Delivery = ({ height = "24", width = "24", ...props }: IconSvgProps) => {
     return (
         <svg role="img" viewBox="0 0 32 32" width={width} height={height} {...props}>
             <path fill="currentColor" d="M4 16h12v2H4zm-2-5h10v2H2z" />
@@ -24,7 +24,7 @@ export const DeliveryIcon = ({ height = "24", width = "24", ...props }: IconSvgP
     );
 };
 
-export const PackageIcon = ({ height = "24", width = "24", ...props }: IconSvgProps) => {
+export const Package = ({ height = "24", width = "24", ...props }: IconSvgProps) => {
     return (
         <svg viewBox="0 0 24 24" fill="none" width={width} height={height} {...props}>
             <path
@@ -40,7 +40,7 @@ export const PackageIcon = ({ height = "24", width = "24", ...props }: IconSvgPr
     );
 };
 
-export const TruckIcon = ({ height = "24", width = "24", ...props }: IconSvgProps) => {
+export const Truck = ({ height = "24", width = "24", ...props }: IconSvgProps) => {
     return (
         <svg viewBox="0 0 24 24" fill="none" width={width} height={height} {...props}>
             <path d="M1 3H16V16H1V3Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

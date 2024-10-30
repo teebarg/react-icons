@@ -1,8 +1,8 @@
 import { IconSvgProps } from "./types";
 import * as React from "react";
 
-export const SearchIcon = (props: IconSvgProps) => (
-    <svg aria-hidden="true" fill="none" focusable="false" height="1em" role="presentation" viewBox="0 0 24 24" width="1em" {...props}>
+export const SearchIcon = ({ width = "1em", height = "1em", ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" width={width} {...attributes} height={height} fill="none" focusable="false" role="presentation">
         <path
             d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
             stroke="currentColor"
@@ -14,8 +14,8 @@ export const SearchIcon = (props: IconSvgProps) => (
     </svg>
 );
 
-export const EyeSlashFilledIcon = (props: IconSvgProps) => (
-    <svg aria-hidden="true" fill="none" focusable="false" height="1em" role="presentation" viewBox="0 0 24 24" width="1em" {...props}>
+export const EyeSlashFilledIcon = ({ width = "1em", height = "1em", ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" width={width} {...attributes} height={height} fill="none" focusable="false" role="presentation">
         <path
             d="M21.2714 9.17834C20.9814 8.71834 20.6714 8.28834 20.3514 7.88834C19.9814 7.41834 19.2814 7.37834 18.8614 7.79834L15.8614 10.7983C16.0814 11.4583 16.1214 12.2183 15.9214 13.0083C15.5714 14.4183 14.4314 15.5583 13.0214 15.9083C12.2314 16.1083 11.4714 16.0683 10.8114 15.8483C10.8114 15.8483 9.38141 17.2783 8.35141 18.3083C7.85141 18.8083 8.01141 19.6883 8.68141 19.9483C9.75141 20.3583 10.8614 20.5683 12.0014 20.5683C13.7814 20.5683 15.5114 20.0483 17.0914 19.0783C18.7014 18.0783 20.1514 16.6083 21.3214 14.7383C22.2714 13.2283 22.2214 10.6883 21.2714 9.17834Z"
             fill="currentColor"
@@ -39,8 +39,8 @@ export const EyeSlashFilledIcon = (props: IconSvgProps) => (
     </svg>
 );
 
-export const EyeFilledIcon = ({ width = "1em", height = "1em", ...props }: IconSvgProps) => (
-    <svg fill="none" focusable="false" height={height} role="presentation" viewBox="0 0 24 24" width={width} {...props}>
+export const EyeFilledIcon = ({ width = "1em", height = "1em", ...attributes }: IconSvgProps) => (
+    <svg fill="none" focusable="false" height={height} role="presentation" viewBox="0 0 24 24" width={width} {...attributes}>
         <path
             d="M21.25 9.14969C18.94 5.51969 15.56 3.42969 12 3.42969C10.22 3.42969 8.49 3.94969 6.91 4.91969C5.33 5.89969 3.91 7.32969 2.75 9.14969C1.75 10.7197 1.75 13.2697 2.75 14.8397C5.06 18.4797 8.44 20.5597 12 20.5597C13.78 20.5597 15.51 20.0397 17.09 19.0697C18.67 18.0897 20.09 16.6597 21.25 14.8397C22.25 13.2797 22.25 10.7197 21.25 9.14969ZM12 16.0397C9.76 16.0397 7.96 14.2297 7.96 11.9997C7.96 9.76969 9.76 7.95969 12 7.95969C14.24 7.95969 16.04 9.76969 16.04 11.9997C16.04 14.2297 14.24 16.0397 12 16.0397Z"
             fill="currentColor"
@@ -52,13 +52,13 @@ export const EyeFilledIcon = ({ width = "1em", height = "1em", ...props }: IconS
     </svg>
 );
 
-export const MinusIcon = ({ size = 24, width, height, ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...props}>
+export const MinusIcon = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...attributes}>
         <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 );
 
-export const VerticalDotsIcon = ({ size = 24, width, height, ...props }: IconSvgProps) => (
+export const VerticalDotsIcon = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
     <svg
         aria-hidden="true"
         fill="none"
@@ -67,7 +67,7 @@ export const VerticalDotsIcon = ({ size = 24, width, height, ...props }: IconSvg
         role="presentation"
         viewBox="0 0 24 24"
         width={size || width}
-        {...props}
+        {...attributes}
     >
         <path
             d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
@@ -76,8 +76,8 @@ export const VerticalDotsIcon = ({ size = 24, width, height, ...props }: IconSvg
     </svg>
 );
 
-export const ChevronDown = ({ strokeWidth = "1.5", width = "20", height = "20", ...props }) => (
-    <svg fill="none" width={width} {...props} height={height}>
+export const ChevronDown = ({ strokeWidth = "1.5", width = "20", height = "20", ...attributes }) => (
+    <svg fill="none" width={width} {...attributes} height={height}>
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -88,27 +88,27 @@ export const ChevronDown = ({ strokeWidth = "1.5", width = "20", height = "20", 
     </svg>
 );
 
-export const ChevronDownMini = ({ strokeWidth = "1.5", width = "20", height = "20", ...props }) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const ChevronDownMini = ({ strokeWidth = "1.5", width = "20", height = "20", ...attributes }) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth} d="m15 8-5 5-5-5"></path>
     </svg>
 );
 
-export const ChevronRight = ({ strokeWidth = 1.5, width = "20", height = "20", ...props }) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const ChevronRight = ({ strokeWidth = 1.5, width = "20", height = "20", ...attributes }) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path stroke="currentColor" strokeLinejoin="round" strokeLinecap="round" strokeWidth={strokeWidth} d="m6.875 3.75 6.25 6.25-6.25 6.25"></path>
     </svg>
 );
 
-export const ChevronRightMini = ({ strokeWidth = 1.5, width = "20", height = "20", ...props }) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const ChevronRightMini = ({ strokeWidth = 1.5, width = "20", height = "20", ...attributes }) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path stroke="currentColor" strokeLinejoin="round" strokeLinecap="round" strokeWidth={strokeWidth} d="m8 6 4 4-4 4"></path>
     </svg>
 );
 
-export const NotificationIcon = ({ size, height, width, ...props }: IconSvgProps) => {
+export const NotificationIcon = ({ size, height, width, ...attributes }: IconSvgProps) => {
     return (
-        <svg fill="none" height={size || height || 24} viewBox="0 0 24 24" width={size || width || 24} {...props}>
+        <svg fill="none" height={size || height || 24} viewBox="0 0 24 24" width={size || width || 24} {...attributes}>
             <path
                 clipRule="evenodd"
                 d="M18.707 8.796c0 1.256.332 1.997 1.063 2.85.553.628.73 1.435.73 2.31 0 .874-.287 1.704-.863 2.378a4.537 4.537 0 01-2.9 1.413c-1.571.134-3.143.247-4.736.247-1.595 0-3.166-.068-4.737-.247a4.532 4.532 0 01-2.9-1.413 3.616 3.616 0 01-.864-2.378c0-.875.178-1.682.73-2.31.754-.854 1.064-1.594 1.064-2.85V8.37c0-1.682.42-2.781 1.283-3.858C7.861 2.942 9.919 2 11.956 2h.09c2.08 0 4.204.987 5.466 2.625.82 1.054 1.195 2.108 1.195 3.745v.426zM9.074 20.061c0-.504.462-.734.89-.833.5-.106 3.545-.106 4.045 0 .428.099.89.33.89.833-.025.48-.306.904-.695 1.174a3.635 3.635 0 01-1.713.731 3.795 3.795 0 01-1.008 0 3.618 3.618 0 01-1.714-.732c-.39-.269-.67-.694-.695-1.173z"
@@ -119,9 +119,9 @@ export const NotificationIcon = ({ size, height, width, ...props }: IconSvgProps
     );
 };
 
-export const CheckIcon = ({ strokeWidth = 1.5, size, height, width, ...props }: IconSvgProps) => {
+export const CheckIcon = ({ strokeWidth = 1.5, size, height, width, ...attributes }: IconSvgProps) => {
     return (
-        <svg width={size || width || 18} height={size || height || 18} viewBox="0 0 24 24" fill="none" {...props}>
+        <svg width={size || width || 18} height={size || height || 18} viewBox="0 0 24 24" fill="none" {...attributes}>
             <path
                 d="M7.75 11.9999L10.58 14.8299L16.25 9.16992"
                 stroke="currentColor"
@@ -133,8 +133,8 @@ export const CheckIcon = ({ strokeWidth = 1.5, size, height, width, ...props }: 
     );
 };
 
-export const EyeIcon = ({ height = "1em", width = "1em", ...props }: IconSvgProps) => (
-    <svg aria-hidden="true" fill="none" focusable="false" role="presentation" viewBox="0 0 20 20" width={width} height={height} {...props}>
+export const EyeIcon = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg aria-hidden="true" fill="none" focusable="false" role="presentation" viewBox="0 0 20 20" width={width} height={height} {...attributes}>
         <path
             d="M12.9833 10C12.9833 11.65 11.65 12.9833 10 12.9833C8.35 12.9833 7.01666 11.65 7.01666 10C7.01666 8.35 8.35 7.01666 10 7.01666C11.65 7.01666 12.9833 8.35 12.9833 10Z"
             stroke="currentColor"
@@ -152,8 +152,8 @@ export const EyeIcon = ({ height = "1em", width = "1em", ...props }: IconSvgProp
     </svg>
 );
 
-export const EditIcon = ({ height = "1em", width = "1em", ...props }: IconSvgProps) => (
-    <svg aria-hidden="true" fill="none" focusable="false" role="presentation" viewBox="0 0 20 20" width={width} height={height} {...props}>
+export const EditIcon = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg aria-hidden="true" fill="none" focusable="false" role="presentation" viewBox="0 0 20 20" width={width} height={height} {...attributes}>
         <path
             d="M11.05 3.00002L4.20835 10.2417C3.95002 10.5167 3.70002 11.0584 3.65002 11.4334L3.34169 14.1334C3.23335 15.1084 3.93335 15.775 4.90002 15.6084L7.58335 15.15C7.95835 15.0834 8.48335 14.8084 8.74168 14.525L15.5834 7.28335C16.7667 6.03335 17.3 4.60835 15.4583 2.86668C13.625 1.14168 12.2334 1.75002 11.05 3.00002Z"
             stroke="currentColor"
@@ -174,7 +174,7 @@ export const EditIcon = ({ height = "1em", width = "1em", ...props }: IconSvgPro
     </svg>
 );
 
-export const DeleteIcon = ({ size = 16, height = "1em", width = "1em", ...props }: IconSvgProps) => (
+export const DeleteIcon = ({ size = 16, height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg
         aria-hidden="true"
         fill="none"
@@ -183,7 +183,7 @@ export const DeleteIcon = ({ size = 16, height = "1em", width = "1em", ...props 
         viewBox="0 0 20 20"
         width={size || width}
         height={size || height}
-        {...props}
+        {...attributes}
     >
         <path
             d="M17.5 4.98332C14.725 4.70832 11.9333 4.56665 9.15 4.56665C7.5 4.56665 5.85 4.64998 4.2 4.81665L2.5 4.98332"
@@ -211,8 +211,8 @@ export const DeleteIcon = ({ size = 16, height = "1em", width = "1em", ...props 
     </svg>
 );
 
-export const MailIcon = ({ height = "24", width = "24", ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" width={width} height={height} {...props}>
+export const MailIcon = ({ height = "24", width = "24", ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" width={width} height={height} {...attributes}>
         <path
             fill="currentColor"
             d="M12 13.5l-11.2-7.2c-.3-.2-.3-.6-.1-.8.2-.2.6-.2.8 0l11 7.1 11-7.1c.3-.2.6-.2.8 0 .2.2.2.6 0 .8l-11.2 7.2-11.2-7.2z"
@@ -224,15 +224,15 @@ export const MailIcon = ({ height = "24", width = "24", ...props }: IconSvgProps
     </svg>
 );
 
-export const LocationIcon = ({ height = "24", width = "24", ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" width={width} height={height} {...props}>
+export const LocationIcon = ({ height = "24", width = "24", ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" width={width} height={height} {...attributes}>
         <path d="M12 2C8.1 2 5 5.1 5 9c0 4.9 7 13 7 13s7-8.1 7-13c0-3.9-3.1-7-7-7zm0 17.2c-1.5-1.8-6-7.5-6-11.2 0-3.3 2.7-6 6-6s6 2.7 6 6c0 3.7-4.5 9.4-6 11.2z" />
         <circle cx="12" cy="9" r="2.5" />
     </svg>
 );
 
-export const CancelIcon = ({ strokeWidth = 1.5, size = 24, height = "24", width = "24", ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...props}>
+export const CancelIcon = ({ strokeWidth = 1.5, size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes}>
         <path
             fill="currentColor"
             d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7a1 1 0 1 0-1.41 1.41L10.59 12l-4.89 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.41z"
@@ -241,8 +241,8 @@ export const CancelIcon = ({ strokeWidth = 1.5, size = 24, height = "24", width 
     </svg>
 );
 
-export const AdminIcon = ({ size = 24, height = "24", width = "24", ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...props}>
+export const AdminIcon = ({ size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes}>
         <path
             fill="currentColor"
             d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zM12 14c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2s5.78 1.28 6 2H6zm16-12h-2v6h-2v-6h-2V6h6v2z"
@@ -250,8 +250,8 @@ export const AdminIcon = ({ size = 24, height = "24", width = "24", ...props }: 
     </svg>
 );
 
-export const ComponentsIcon = ({ strokeWidth = 2, size = 24, height = "24", width = "24", ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...props}>
+export const ComponentsIcon = ({ strokeWidth = 2, size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes}>
         <rect x="3" y="5" width="18" height="2" fill="currentColor" />
         <circle cx="6" cy="6" r="3" fill="currentColor" />
 
@@ -265,24 +265,24 @@ export const ComponentsIcon = ({ strokeWidth = 2, size = 24, height = "24", widt
     </svg>
 );
 
-export const EcommerceIcon = ({ size = 24, height = "24", width = "24", ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...props} fill="currentColor">
+export const EcommerceIcon = ({ size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes} fill="currentColor">
         <path d="M7 4h-2V2H2v2H1v2h1v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6h1V4h-1V2h-3v2h-2V2h-2v2h-6V2H7v2zm0 2h10v12H7V6zm2 2v2h6V8H9z" />
 
         <path d="M19 8.5c-1.1 0-2-.9-2-2 0-.2.2-.5.4-.7.4-.6.6-1.3.6-2 0-1.7-1.3-3-3-3s-3 1.3-3 3c0 .7.2 1.4.6 2 .2.2.4.5.4.7 0 1.1-.9 2-2 2-.3 0-.6 0-.9.1.2.3.3.6.3.9 0 1.1-.9 2-2 2s-2-.9-2-2c0-.3.1-.6.3-.9-.3-.1-.6-.1-.9-.1-1.1 0-2 .9-2 2 0 1.6 1.3 3 3 3h8c1.7 0 3-1.4 3-3 0-1.1-.9-2-2-2z" />
     </svg>
 );
 
-export const ProfileIcon = ({ size = 24, height = "24", width = "24", ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...props} fill="currentColor">
+export const ProfileIcon = ({ size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes} fill="currentColor">
         <circle cx="12" cy="8" r="4" />
 
         <path d="M12 14c-5 0-8 2.5-8 6v2h16v-2c0-3.5-3-6-8-6z" />
     </svg>
 );
 
-export const CalendarIcon = ({ strokeWidth = 2, size = 24, height = "24", width = "24", ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...props} fill="currentColor">
+export const CalendarIcon = ({ strokeWidth = 2, size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes} fill="currentColor">
         <rect x="3" y="4" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" strokeWidth={strokeWidth} />
 
         <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" strokeWidth={strokeWidth} />
@@ -298,8 +298,8 @@ export const CalendarIcon = ({ strokeWidth = 2, size = 24, height = "24", width 
     </svg>
 );
 
-export const DocumentIcon = ({ strokeWidth = 2, size = 24, height = "24", width = "24", ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...props} fill="currentColor">
+export const DocumentIcon = ({ strokeWidth = 2, size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes} fill="currentColor">
         <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM13 9V3.5L18.5 9H13z" />
 
         <line x1="8" y1="13" x2="16" y2="13" stroke="currentColor" strokeWidth={strokeWidth} />
@@ -307,9 +307,9 @@ export const DocumentIcon = ({ strokeWidth = 2, size = 24, height = "24", width 
     </svg>
 );
 
-export const RightArrowIcon = ({ strokeWidth = 1.5, size, height, width, ...props }: IconSvgProps) => {
+export const RightArrowIcon = ({ strokeWidth = 1.5, size, height, width, ...attributes }: IconSvgProps) => {
     return (
-        <svg width={size || width} height={size || height} {...props} fill="currentColor" viewBox="0 0 24 24">
+        <svg width={size || width} height={size || height} {...attributes} fill="currentColor" viewBox="0 0 24 24">
             <path
                 fill="none"
                 stroke="currentColor"
@@ -322,9 +322,9 @@ export const RightArrowIcon = ({ strokeWidth = 1.5, size, height, width, ...prop
     );
 };
 
-export const AttachmentIcon = ({ strokeWidth = 1.5, size, height = "16", width = "16", ...props }: IconSvgProps) => {
+export const AttachmentIcon = ({ strokeWidth = 1.5, size, height = "16", width = "16", ...attributes }: IconSvgProps) => {
     return (
-        <svg width={size || width} height={size || height} {...props} aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+        <svg width={size || width} height={size || height} {...attributes} aria-hidden="true" focusable="false" viewBox="0 0 24 24">
             <path
                 fill="none"
                 stroke="currentColor"
@@ -336,17 +336,17 @@ export const AttachmentIcon = ({ strokeWidth = 1.5, size, height = "16", width =
     );
 };
 
-export const VoiceIcon = ({ strokeWidth = 1.5, size, height = "16", width = "16", ...props }: IconSvgProps) => {
+export const VoiceIcon = ({ strokeWidth = 1.5, size, height = "16", width = "16", ...attributes }: IconSvgProps) => {
     return (
-        <svg width={size || width} height={size || height} {...props} aria-hidden="true" viewBox="0 0 24 24">
+        <svg width={size || width} height={size || height} {...attributes} aria-hidden="true" viewBox="0 0 24 24">
             <path fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth={strokeWidth} d="M12 4v16m4-13v10M8 7v10m12-6v2M4 11v2" />
         </svg>
     );
 };
 
-export const TemplateIcon = ({ strokeWidth = 1.5, size, height = "18", width = "18", ...props }: IconSvgProps) => {
+export const TemplateIcon = ({ strokeWidth = 1.5, size, height = "18", width = "18", ...attributes }: IconSvgProps) => {
     return (
-        <svg width={size || width} height={size || height} {...props} aria-hidden="true" viewBox="0 0 24 24">
+        <svg width={size || width} height={size || height} {...attributes} aria-hidden="true" viewBox="0 0 24 24">
             <g fill="none" stroke="currentColor" strokeWidth={strokeWidth}>
                 <path d="m20.312 12.647l.517-1.932c.604-2.255.907-3.382.68-4.358a4 4 0 0 0-1.162-2.011c-.731-.685-1.859-.987-4.114-1.591c-2.255-.605-3.383-.907-4.358-.68a4 4 0 0 0-2.011 1.162c-.587.626-.893 1.543-1.348 3.209l-.244.905l-.517 1.932c-.605 2.255-.907 3.382-.68 4.358a4 4 0 0 0 1.162 2.011c.731.685 1.859.987 4.114 1.592c2.032.544 3.149.843 4.064.73c.1-.012.198-.03.294-.052a4 4 0 0 0 2.011-1.16c.685-.732.987-1.86 1.592-4.115Z" />
                 <path d="M16.415 17.974a4 4 0 0 1-1.068 1.678c-.731.685-1.859.987-4.114 1.591s-3.383.907-4.358.679a4 4 0 0 1-2.011-1.161c-.685-.731-.988-1.859-1.592-4.114l-.517-1.932c-.605-2.255-.907-3.383-.68-4.358a4 4 0 0 1 1.162-2.011c.731-.685 1.859-.987 4.114-1.592c.426-.114.813-.218 1.165-.309" />
@@ -356,9 +356,9 @@ export const TemplateIcon = ({ strokeWidth = 1.5, size, height = "18", width = "
     );
 };
 
-export const StarIcon = ({ size, height, width, ...props }: IconSvgProps) => {
+export const StarIcon = ({ size, height, width, ...attributes }: IconSvgProps) => {
     return (
-        <svg width={size || width} height={size || height} {...props} aria-hidden="true" viewBox="0 0 24 24">
+        <svg width={size || width} height={size || height} {...attributes} aria-hidden="true" viewBox="0 0 24 24">
             <path
                 fill="currentColor"
                 d="M9.153 5.408C10.42 3.136 11.053 2 12 2c.947 0 1.58 1.136 2.847 3.408l.328.588c.36.646.54.969.82 1.182c.28.213.63.292 1.33.45l.636.144c2.46.557 3.689.835 3.982 1.776c.292.94-.546 1.921-2.223 3.882l-.434.507c-.476.557-.715.836-.822 1.18c-.107.345-.071.717.001 1.46l.066.677c.253 2.617.38 3.925-.386 4.506c-.766.582-1.918.051-4.22-1.009l-.597-.274c-.654-.302-.981-.452-1.328-.452c-.347 0-.674.15-1.328.452l-.596.274c-2.303 1.06-3.455 1.59-4.22 1.01c-.767-.582-.64-1.89-.387-4.507l.066-.676c.072-.744.108-1.116 0-1.46c-.106-.345-.345-.624-.821-1.18l-.434-.508c-1.677-1.96-2.515-2.941-2.223-3.882c.293-.941 1.523-1.22 3.983-1.776l.636-.144c.699-.158 1.048-.237 1.329-.45c.28-.213.46-.536.82-1.182z"
@@ -367,9 +367,9 @@ export const StarIcon = ({ size, height, width, ...props }: IconSvgProps) => {
     );
 };
 
-export const FunnelIcon = ({ size, height, width, ...props }: IconSvgProps) => {
+export const FunnelIcon = ({ size, height, width, ...attributes }: IconSvgProps) => {
     return (
-        <svg width={size || width} height={size || height} {...props} aria-hidden="true" viewBox="0 0 24 24">
+        <svg width={size || width} height={size || height} {...attributes} aria-hidden="true" viewBox="0 0 24 24">
             <path
                 fill="none"
                 stroke="currentColor"
@@ -380,17 +380,17 @@ export const FunnelIcon = ({ size, height, width, ...props }: IconSvgProps) => {
     );
 };
 
-export const EllipsisIcon = ({ size = 24, height = "24", width = "24", ...props }: IconSvgProps) => {
+export const EllipsisIcon = ({ size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => {
     return (
-        <svg width={size || width} height={size || height} {...props} aria-hidden="true" viewBox="0 0 24 24">
+        <svg width={size || width} height={size || height} {...attributes} aria-hidden="true" viewBox="0 0 24 24">
             <path fill="currentColor" d="M7 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0m7 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0m7 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0" />
         </svg>
     );
 };
 
-export const CopyIcon = ({ height = "1em", width = "1em", ...props }: IconSvgProps) => {
+export const CopyIcon = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => {
     return (
-        <svg width={width} height={height} {...props} aria-hidden="true" viewBox="0 0 16 16">
+        <svg width={width} height={height} {...attributes} aria-hidden="true" viewBox="0 0 16 16">
             <path
                 fill="currentColor"
                 fillRule="evenodd"
@@ -401,9 +401,9 @@ export const CopyIcon = ({ height = "1em", width = "1em", ...props }: IconSvgPro
     );
 };
 
-export const ThumbsUpIcon = ({ height = "1em", width = "1em", ...props }: IconSvgProps) => {
+export const ThumbsUpIcon = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => {
     return (
-        <svg width={width} height={height} {...props} aria-hidden="true" viewBox="0 0 16 16">
+        <svg width={width} height={height} {...attributes} aria-hidden="true" viewBox="0 0 16 16">
             <path
                 fill="currentColor"
                 fillRule="evenodd"
@@ -414,9 +414,9 @@ export const ThumbsUpIcon = ({ height = "1em", width = "1em", ...props }: IconSv
     );
 };
 
-export const ThumbsDownIcon = ({ height = "1em", width = "1em", ...props }: IconSvgProps) => {
+export const ThumbsDownIcon = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => {
     return (
-        <svg width={width} height={height} {...props} aria-hidden="true" viewBox="0 0 16 16">
+        <svg width={width} height={height} {...attributes} aria-hidden="true" viewBox="0 0 16 16">
             <path
                 fill="currentColor"
                 fillRule="evenodd"
@@ -427,9 +427,9 @@ export const ThumbsDownIcon = ({ height = "1em", width = "1em", ...props }: Icon
     );
 };
 
-export const EmojiIcon = ({ height = "1em", width = "1em", ...props }: IconSvgProps) => {
+export const EmojiIcon = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => {
     return (
-        <svg width={width} height={height} {...props} aria-hidden="true" viewBox="0 0 16 16">
+        <svg width={width} height={height} {...attributes} aria-hidden="true" viewBox="0 0 16 16">
             <path
                 fill="currentColor"
                 fillRule="evenodd"
@@ -440,41 +440,41 @@ export const EmojiIcon = ({ height = "1em", width = "1em", ...props }: IconSvgPr
     );
 };
 
-export const ArrowUpIcon = ({ size, height = "24", width = "24", ...props }: IconSvgProps) => {
+export const ArrowUpIcon = ({ size, height = "24", width = "24", ...attributes }: IconSvgProps) => {
     return (
-        <svg width={size || width} height={size || height} {...props} viewBox="0 0 24 24" fill="currentColor">
+        <svg width={size || width} height={size || height} {...attributes} viewBox="0 0 24 24" fill="currentColor">
             <path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
         </svg>
     );
 };
 
-export const SquareIcon = ({ size, height = "24", width = "24", ...props }: IconSvgProps) => {
+export const SquareIcon = ({ size, height = "24", width = "24", ...attributes }: IconSvgProps) => {
     return (
-        <svg width={size || width} height={size || height} {...props} viewBox="0 0 16 16" fill="currentColor">
+        <svg width={size || width} height={size || height} {...attributes} viewBox="0 0 16 16" fill="currentColor">
             <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" strokeWidth="0"></path>
         </svg>
     );
 };
 
-export const ExclamationIcon = ({ size, height = "20", width = "20", ...props }: IconSvgProps) => {
+export const ExclamationIcon = ({ size, height = "20", width = "20", ...attributes }: IconSvgProps) => {
     return (
-        <svg viewBox="0 0 24 24" fill="currentColor" width={size || width} height={size || height} {...props}>
+        <svg viewBox="0 0 24 24" fill="currentColor" width={size || width} height={size || height} {...attributes}>
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
         </svg>
     );
 };
 
-export const UploadIcon = ({ size, height = "20", width = "20", ...props }: IconSvgProps) => {
+export const UploadIcon = ({ size, height = "20", width = "20", ...attributes }: IconSvgProps) => {
     return (
-        <svg fill="currentColor" viewBox="0 0 24 24" width={size || width} height={size || height} {...props}>
+        <svg fill="currentColor" viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes}>
             <path fill="none" d="M0 0h24v24H0z" />
             <path d="M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z" />
         </svg>
     );
 };
 
-export const FavouriteIcon = ({ size = 24, width, height, ...props }: IconSvgProps) => (
-    <svg aria-hidden="true" role="img" viewBox="0 0 24 24" width={size || width} height={size || height} {...props}>
+export const FavouriteIcon = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
+    <svg aria-hidden="true" role="img" viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes}>
         <path
             fill="currentColor"
             d="m8.962 18.91l.464-.588zM12 5.5l-.54.52a.75.75 0 0 0 1.08 0zm3.038 13.41l.465.59zm-5.612-.588C7.91 17.127 6.253 15.96 4.938 14.48C3.65 13.028 2.75 11.335 2.75 9.137h-1.5c0 2.666 1.11 4.7 2.567 6.339c1.43 1.61 3.254 2.9 4.68 4.024zM2.75 9.137c0-2.15 1.215-3.954 2.874-4.713c1.612-.737 3.778-.541 5.836 1.597l1.08-1.04C10.1 2.444 7.264 2.025 5 3.06C2.786 4.073 1.25 6.425 1.25 9.137zM8.497 19.5c.513.404 1.063.834 1.62 1.16c.557.325 1.193.59 1.883.59v-1.5c-.31 0-.674-.12-1.126-.385c-.453-.264-.922-.628-1.448-1.043zm7.006 0c1.426-1.125 3.25-2.413 4.68-4.024c1.457-1.64 2.567-3.673 2.567-6.339h-1.5c0 2.198-.9 3.891-2.188 5.343c-1.315 1.48-2.972 2.647-4.488 3.842zM22.75 9.137c0-2.712-1.535-5.064-3.75-6.077c-2.264-1.035-5.098-.616-7.54 1.92l1.08 1.04c2.058-2.137 4.224-2.333 5.836-1.596c1.659.759 2.874 2.562 2.874 4.713zm-8.176 9.185c-.526.415-.995.779-1.448 1.043c-.452.264-.816.385-1.126.385v1.5c.69 0 1.326-.265 1.883-.59c.558-.326 1.107-.756 1.62-1.16z"
@@ -482,8 +482,8 @@ export const FavouriteIcon = ({ size = 24, width, height, ...props }: IconSvgPro
     </svg>
 );
 
-export const HomeIcon = ({ size = 24, width, height, ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...props}>
+export const HomeIcon = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...attributes}>
         <path
             d="M3 9.5L12 3L21 9.5V19C21 19.55 20.55 20 20 20H4C3.45 20 3 19.55 3 19V9.5Z"
             stroke="currentColor"
@@ -495,14 +495,14 @@ export const HomeIcon = ({ size = 24, width, height, ...props }: IconSvgProps) =
     </svg>
 );
 
-export const ArrowLeftIcon = ({ size = 24, width, height, ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...props}>
+export const ArrowLeftIcon = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...attributes}>
         <path d="M15 6L9 12L15 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 );
 
-export const RefreshCcw = ({ size = 24, width, height, ...props }: IconSvgProps) => (
-    <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...props}>
+export const RefreshCcw = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
+    <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...attributes}>
         <path d="M1 4V10H7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         <path d="M23 20V14H17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         <path
@@ -522,8 +522,8 @@ export const RefreshCcw = ({ size = 24, width, height, ...props }: IconSvgProps)
     </svg>
 );
 
-export const CheckCircleSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const CheckCircleSolid = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path
             fill="currentColor"
             fillRule="evenodd"
@@ -533,8 +533,8 @@ export const CheckCircleSolid = ({ height = "20", width = "20", ...props }: Icon
     </svg>
 );
 
-export const ArrowRightOnRectangle = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const ArrowRightOnRectangle = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -545,8 +545,8 @@ export const ArrowRightOnRectangle = ({ height = "20", width = "20", ...props }:
     </svg>
 );
 
-export const ChevronUpDown = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const ChevronUpDown = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -581,8 +581,8 @@ export const Pencil = ({ height = "15", width = "15", ...attributes }: IconSvgPr
     </svg>
 );
 
-export const PencilSquare = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const PencilSquare = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -593,8 +593,8 @@ export const PencilSquare = ({ height = "20", width = "20", ...props }: IconSvgP
     </svg>
 );
 
-export const PencilSquareSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const PencilSquareSolid = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             fill="currentColor"
             d="m5.433 13.917 1.262-3.155A4 4 0 0 1 7.58 9.42l6.92-6.918a2.121 2.121 0 1 1 3 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 0 1-.65-.65v-.001Z"
@@ -606,14 +606,14 @@ export const PencilSquareSolid = ({ height = "20", width = "20", ...props }: Ico
     </svg>
 );
 
-export const Plus = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const Plus = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10 3.75v12.5M16.25 10H3.75"></path>
     </svg>
 );
 
-export const Trash = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const Trash = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -624,8 +624,8 @@ export const Trash = ({ height = "20", width = "20", ...props }: IconSvgProps) =
     </svg>
 );
 
-export const InformationCircleSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const InformationCircleSolid = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path
             fill="currentColor"
             fillRule="evenodd"
@@ -635,8 +635,8 @@ export const InformationCircleSolid = ({ height = "20", width = "20", ...props }
     </svg>
 );
 
-export const Spinner = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const Spinner = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path
             fill="currentColor"
             d="M14.865 14.865c.437.437.441 1.154-.053 1.526A8 8 0 1 1 9.634 2.008c.618-.028 1.072.527 1.014 1.143-.059.615-.609 1.056-1.224 1.118a5.76 5.76 0 1 0 3.785 10.514c.514-.345 1.219-.355 1.656.082Z"
@@ -644,26 +644,26 @@ export const Spinner = ({ height = "20", width = "20", ...props }: IconSvgProps)
     </svg>
 );
 
-export const ArrowUpRightMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const ArrowUpRightMini = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m5.75 14.25 8.5-8.5m0 0h-7.5m7.5 0v7.5"></path>
     </svg>
 );
 
-export const XMark = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const XMark = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5 15 15 5M5 5l10 10"></path>
     </svg>
 );
 
-export const XMarkMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const XMarkMini = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m6 14 8-8M6 6l8 8"></path>
     </svg>
 );
 
-export const MagnifyingGlassMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const MagnifyingGlassMini = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -674,14 +674,14 @@ export const MagnifyingGlassMini = ({ height = "20", width = "20", ...props }: I
     </svg>
 );
 
-export const ArrowUpMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const ArrowUpMini = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m5 9 5-5m0 0 5 5m-5-5v12"></path>
     </svg>
 );
 
-export const ChatBubble = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const ChatBubble = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -692,8 +692,8 @@ export const ChatBubble = ({ height = "20", width = "20", ...props }: IconSvgPro
     </svg>
 );
 
-export const ChatBubbleLeftRight = ({ height = "24", width = "24", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+export const ChatBubbleLeftRight = ({ height = "24", width = "24", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -702,8 +702,8 @@ export const ChatBubbleLeftRight = ({ height = "24", width = "24", ...props }: I
     </svg>
 );
 
-export const ChatBubbleLeftRightSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} fill="none">
+export const ChatBubbleLeftRightSolid = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} fill="none">
         <path
             fill="currentColor"
             d="M4.094 2.215a41.058 41.058 0 0 1 10.562 0c1.602.208 2.742 1.55 2.837 3.106a3.67 3.67 0 0 0-.86-.176 42.408 42.408 0 0 0-7.016 0C7.652 5.308 6.25 6.97 6.25 8.84v3.572a3.725 3.725 0 0 0 2.027 3.32l-2.21 2.21A.625.625 0 0 1 5 17.5v-3.358a40.495 40.495 0 0 1-.906-.107c-1.673-.218-2.844-1.674-2.844-3.317V5.532c0-1.642 1.17-3.1 2.844-3.317Z"
@@ -715,11 +715,11 @@ export const ChatBubbleLeftRightSolid = ({ height = "20", width = "20", ...props
     </svg>
 );
 
-export const Activity = ({ height = "24", width = "24", ...props }: IconSvgProps) => (
+export const Activity = ({ height = "24", width = "24", ...attributes }: IconSvgProps) => (
     <svg
         width={width}
         height={height}
-        {...props}
+        {...attributes}
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -731,8 +731,161 @@ export const Activity = ({ height = "24", width = "24", ...props }: IconSvgProps
     </svg>
 );
 
-export const Bell = ({ height = "24px", width = "24px", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} viewBox="0 0 24 24" fill="none">
+export const ArrowPath = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" clipPath="url(#a)">
+            <path d="M4.752 9.616 1.935 8.86l-.755 2.817"></path>
+            <path d="M13.136 8.53a5.729 5.729 0 0 1-11.196.357M10.248 5.384l2.817.755.755-2.817"></path>
+            <path d="M1.864 6.469a5.729 5.729 0 0 1 11.184-.403"></path>
+        </g>
+        <defs>
+            <clipPath id="a">
+                <path fill="#fff" d="M0 0h15v15H0z"></path>
+            </clipPath>
+        </defs>
+    </svg>
+);
+
+export const ArrowLongDown = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M7.5 13.055V1.945M11.278 9.278 7.5 13.056 3.722 9.278"
+        ></path>
+    </svg>
+);
+
+export const ArrowLongLeft = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M1.944 7.5h11.112M5.722 11.278 1.944 7.5l3.778-3.778"
+        ></path>
+    </svg>
+);
+
+export const ArrowLongRight = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M13.056 7.5H1.944M9.278 3.722 13.056 7.5l-3.778 3.778"
+        ></path>
+    </svg>
+);
+
+export const ArrowLongUp = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M7.667 1.944v11.111M3.889 5.722l3.778-3.778 3.778 3.778"
+        ></path>
+    </svg>
+);
+
+export const ArrrowRight = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M13.056 7.5H1.944M9.278 3.722 13.056 7.5l-3.778 3.778"
+        ></path>
+    </svg>
+);
+
+export const ArrowUpCircleSolid = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <g clipPath="url(#a)">
+            <path
+                fill="currentColor"
+                d="M7.5.389C3.58.389.389 3.579.389 7.5s3.19 7.111 7.111 7.111 7.111-3.19 7.111-7.111S11.421.389 7.5.389m2.693 6.915a.665.665 0 0 1-.942 0L8.167 6.22v4.168a.667.667 0 0 1-1.334 0V6.221L5.75 7.305a.667.667 0 1 1-.943-.943L7.028 4.14c.26-.26.683-.26.943 0l2.222 2.222c.26.26.26.683 0 .943"
+            ></path>
+        </g>
+        <defs>
+            <clipPath id="a">
+                <path fill="#fff" d="M0 0h15v15H0z"></path>
+            </clipPath>
+        </defs>
+    </svg>
+);
+
+export const ArrowUpDown = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M7.056 10.611 9.944 13.5l2.89-2.889M9.944 13.5V6.389M2.167 4.389 5.056 1.5l2.888 2.889M5.056 1.5v7.111"
+        ></path>
+    </svg>
+);
+
+export const ArrowUpRightOnBox = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M8.833 1.944h4.223v4.223M13.056 1.944 7.5 7.5M11.278 8.833v2.445c0 .982-.796 1.778-1.778 1.778H3.722a1.777 1.777 0 0 1-1.778-1.778V5.5c0-.982.796-1.778 1.778-1.778h2.445"
+        ></path>
+    </svg>
+);
+
+export const ArrowUpTray = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M13.056 9.944v1.334c0 .982-.796 1.777-1.778 1.777H3.722a1.777 1.777 0 0 1-1.778-1.777V9.944M10.611 5.055 7.5 1.945l-3.111 3.11M7.5 1.944v6.667"
+        ></path>
+    </svg>
+);
+
+export const ArrowUturnLeft = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" clipPath="url(#a)">
+            <path d="M1.5 5.056h8.667a3.333 3.333 0 0 1 0 6.666H6.833"></path>
+            <path d="M4.611 8.167 1.5 5.056l3.111-3.112"></path>
+        </g>
+        <defs>
+            <clipPath id="a">
+                <path fill="#fff" d="M0 0h15v15H0z"></path>
+            </clipPath>
+        </defs>
+    </svg>
+);
+
+export const ArrowsPointingOut = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M9.056 1.944h4v4M13.056 1.944l-4 4M1.944 9.056v4h4M1.944 13.056l4-4"
+        ></path>
+    </svg>
+);
+
+export const Bell = ({ height = "24px", width = "24px", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} viewBox="0 0 24 24" fill="none">
         <path
             d="M14 20C13.7968 20.3042 13.505 20.5566 13.154 20.7321C12.803 20.9076 12.4051 21 12 21C11.5949 21 11.197 20.9076 10.846 20.7321C10.495 20.5566 10.2032 20.3042 10 20"
             stroke="currentColor"
@@ -750,8 +903,8 @@ export const Bell = ({ height = "24px", width = "24px", ...props }: IconSvgProps
     </svg>
 );
 
-export const Bot = ({ height = "64", width = "64", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} viewBox="0 0 64 64">
+export const Bot = ({ height = "64", width = "64", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} viewBox="0 0 64 64">
         <rect x="12" y="20" width="40" height="32" rx="8" ry="8" fill="#4CAF50" />
         <rect x="18" y="26" width="12" height="12" rx="6" ry="6" fill="#FFFFFF" />
         <rect x="34" y="26" width="12" height="12" rx="6" ry="6" fill="#FFFFFF" />
@@ -761,8 +914,8 @@ export const Bot = ({ height = "64", width = "64", ...props }: IconSvgProps) => 
     </svg>
 );
 
-export const Calendar = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const Calendar = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -773,8 +926,8 @@ export const Calendar = ({ height = "20", width = "20", ...props }: IconSvgProps
     </svg>
 );
 
-export const CalendarMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const CalendarMini = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -790,8 +943,8 @@ export const CalendarMini = ({ height = "20", width = "20", ...props }: IconSvgP
     </svg>
 );
 
-export const CalendarSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const CalendarSolid = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             fill="currentColor"
             d="M10.625 10.625a.624.624 0 1 1-1.249 0 .624.624 0 0 1 1.249 0Zm-4.375 2.5a.625.625 0 1 0 0-1.25.625.625 0 0 0 0 1.25Zm.625 1.25a.625.625 0 1 1-1.25 0 .625.625 0 0 1 1.25 0Zm1.25-1.25a.625.625 0 1 0 0-1.25.625.625 0 0 0 0 1.25Zm.625 1.25a.625.625 0 1 1-1.25 0 .625.625 0 0 1 1.25 0Zm1.25-1.25a.624.624 0 1 0 0-1.249.624.624 0 0 0 0 1.249Zm.625 1.25a.624.624 0 1 1-1.249 0 .624.624 0 0 1 1.249 0Zm1.25-1.25a.624.624 0 1 0 0-1.249.624.624 0 0 0 0 1.249Zm.625 1.25a.624.624 0 1 1-1.249 0 .624.624 0 0 1 1.249 0Zm1.25-1.25a.624.624 0 1 0 0-1.249.624.624 0 0 0 0 1.249Zm-1.25-2.5a.624.624 0 1 1-1.249 0 .624.624 0 0 1 1.249 0Zm1.25.625a.624.624 0 1 0 0-1.249.624.624 0 0 0 0 1.249Z"
@@ -805,20 +958,50 @@ export const CalendarSolid = ({ height = "20", width = "20", ...props }: IconSvg
     </svg>
 );
 
-export const Check = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const Check = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m3.75 10.625 5 5 7.5-11.25"></path>
     </svg>
 );
 
-export const CheckMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const CheckMini = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m5.833 10.417 3.334 3.333 5-7.5"></path>
     </svg>
 );
 
-export const Component = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const ChevronLeft = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <g clipPath="url(#a)">
+            <g clipPath="url(#b)">
+                <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M9.722 13.055 4.167 7.5l5.555-5.556"
+                ></path>
+            </g>
+        </g>
+        <defs>
+            <clipPath id="a">
+                <path fill="#fff" d="M0 0h15v15H0z"></path>
+            </clipPath>
+            <clipPath id="b">
+                <path fill="#fff" d="M-.5-.5h16v16h-16z"></path>
+            </clipPath>
+        </defs>
+    </svg>
+);
+
+export const ChevronLeftMini = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.722 13.055 4.167 7.5l5.555-5.556"></path>
+    </svg>
+);
+
+export const Component = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -829,8 +1012,8 @@ export const Component = ({ height = "20", width = "20", ...props }: IconSvgProp
     </svg>
 );
 
-export const ComponentSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const ComponentSolid = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             fill="currentColor"
             stroke="currentColor"
@@ -842,8 +1025,8 @@ export const ComponentSolid = ({ height = "20", width = "20", ...props }: IconSv
     </svg>
 );
 
-export const CogSixTooth = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const CogSixTooth = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -861,8 +1044,49 @@ export const CogSixTooth = ({ height = "20", width = "20", ...props }: IconSvgPr
     </svg>
 );
 
-export const DocumentSeries = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const CogSixToothSolid = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <path
+            fill="currentColor"
+            fillRule="evenodd"
+            d="M9.232 1.875c-.765 0-1.416.553-1.542 1.306l-.148.893c-.017.1-.096.217-.248.29-.285.137-.56.296-.822.475-.138.096-.278.105-.375.07L5.25 4.59a1.563 1.563 0 0 0-1.902.683l-.768 1.33a1.563 1.563 0 0 0 .36 1.988l.7.577c.08.065.142.19.128.358a6.334 6.334 0 0 0 0 .949c.013.167-.049.293-.127.358l-.701.577a1.562 1.562 0 0 0-.36 1.988l.768 1.33a1.562 1.562 0 0 0 1.902.682l.85-.318c.095-.036.235-.026.374.068.26.178.534.338.821.475.152.073.23.19.247.292l.149.892a1.563 1.563 0 0 0 1.541 1.306h1.537c.764 0 1.416-.552 1.542-1.306l.148-.893c.017-.1.095-.217.248-.291.286-.137.56-.297.82-.475.14-.095.28-.104.376-.068l.85.318a1.562 1.562 0 0 0 1.9-.683l.769-1.33a1.563 1.563 0 0 0-.36-1.988l-.7-.577c-.08-.065-.142-.19-.129-.358a6.345 6.345 0 0 0 0-.949c-.013-.167.05-.293.128-.358l.7-.577c.59-.485.742-1.325.36-1.987l-.768-1.331a1.562 1.562 0 0 0-1.901-.682l-.85.318c-.095.036-.235.026-.374-.069a6.246 6.246 0 0 0-.821-.475c-.153-.072-.231-.189-.248-.29l-.149-.893a1.563 1.563 0 0 0-1.542-1.306H9.232ZM10 13.125a3.125 3.125 0 1 0 0-6.25 3.125 3.125 0 0 0 0 6.25Z"
+            clipRule="evenodd"
+        ></path>
+    </svg>
+);
+
+export const CurrencyDollar = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" clipPath="url(#a)">
+            <path d="M7.5 13.944a6.444 6.444 0 1 0 0-12.888 6.444 6.444 0 0 0 0 12.888"></path>
+            <path d="M9.115 5.679c-.35-.83-1.051-1.017-1.581-1.017-.493 0-1.787.262-1.667 1.504.084.872.906 1.196 1.624 1.324s1.761.402 1.787 1.454c.021.888-.778 1.495-1.744 1.495-.923 0-1.565-.359-1.812-1.17M7.5 3.722v.94M7.5 10.44v.838"></path>
+        </g>
+        <defs>
+            <clipPath id="a">
+                <path fill="#fff" d="M0 0h15v15H0z"></path>
+            </clipPath>
+        </defs>
+    </svg>
+);
+
+export const CurrencyDollarSolid = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
+        <g clipPath="url(#a)">
+            <path
+                fill="currentColor"
+                d="M7.5.389C3.58.389.389 3.579.389 7.5s3.19 7.111 7.111 7.111 7.111-3.19 7.111-7.111S11.421.389 7.5.389m1.871 9.994c-.313.32-.736.538-1.204.645v.25a.667.667 0 0 1-1.334 0v-.247c-.876-.183-1.49-.72-1.748-1.568a.666.666 0 1 1 1.275-.389c.106.346.328.699 1.175.699.355 0 .686-.121.883-.322a.66.66 0 0 0 .194-.49c-.007-.288-.11-.612-1.237-.814-1.758-.314-2.114-1.335-2.17-1.916-.055-.575.104-1.086.46-1.478.318-.349.753-.545 1.17-.653v-.378a.667.667 0 0 1 1.333 0v.358A2.23 2.23 0 0 1 9.73 5.42a.667.667 0 0 1-1.228.518c-.064-.15-.258-.61-.967-.61-.246 0-.683.1-.884.321-.063.07-.145.193-.12.454.013.136.053.549 1.077.732 1.522.273 2.309.977 2.336 2.093a2 2 0 0 1-.573 1.455"
+            ></path>
+        </g>
+        <defs>
+            <clipPath id="a">
+                <path fill="#fff" d="M0 0h15v15H0z"></path>
+            </clipPath>
+        </defs>
+    </svg>
+);
+
+export const DocumentSeries = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -873,8 +1097,8 @@ export const DocumentSeries = ({ height = "20", width = "20", ...props }: IconSv
     </svg>
 );
 
-export const DocumentText = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const DocumentText = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -885,8 +1109,8 @@ export const DocumentText = ({ height = "20", width = "20", ...props }: IconSvgP
     </svg>
 );
 
-export const DocumentTextSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const DocumentTextSolid = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             fill="currentColor"
             fillRule="evenodd"
@@ -900,19 +1124,8 @@ export const DocumentTextSolid = ({ height = "20", width = "20", ...props }: Ico
     </svg>
 );
 
-export const CogSixToothSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
-        <path
-            fill="currentColor"
-            fillRule="evenodd"
-            d="M9.232 1.875c-.765 0-1.416.553-1.542 1.306l-.148.893c-.017.1-.096.217-.248.29-.285.137-.56.296-.822.475-.138.096-.278.105-.375.07L5.25 4.59a1.563 1.563 0 0 0-1.902.683l-.768 1.33a1.563 1.563 0 0 0 .36 1.988l.7.577c.08.065.142.19.128.358a6.334 6.334 0 0 0 0 .949c.013.167-.049.293-.127.358l-.701.577a1.562 1.562 0 0 0-.36 1.988l.768 1.33a1.562 1.562 0 0 0 1.902.682l.85-.318c.095-.036.235-.026.374.068.26.178.534.338.821.475.152.073.23.19.247.292l.149.892a1.563 1.563 0 0 0 1.541 1.306h1.537c.764 0 1.416-.552 1.542-1.306l.148-.893c.017-.1.095-.217.248-.291.286-.137.56-.297.82-.475.14-.095.28-.104.376-.068l.85.318a1.562 1.562 0 0 0 1.9-.683l.769-1.33a1.563 1.563 0 0 0-.36-1.988l-.7-.577c-.08-.065-.142-.19-.129-.358a6.345 6.345 0 0 0 0-.949c-.013-.167.05-.293.128-.358l.7-.577c.59-.485.742-1.325.36-1.987l-.768-1.331a1.562 1.562 0 0 0-1.901-.682l-.85.318c-.095.036-.235.026-.374-.069a6.246 6.246 0 0 0-.821-.475c-.153-.072-.231-.189-.248-.29l-.149-.893a1.563 1.563 0 0 0-1.542-1.306H9.232ZM10 13.125a3.125 3.125 0 1 0 0-6.25 3.125 3.125 0 0 0 0 6.25Z"
-            clipRule="evenodd"
-        ></path>
-    </svg>
-);
-
-export const DotsSix = ({ height = "24px", width = "24px", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} viewBox="0 0 20 20" fill="none">
+export const DotsSix = ({ height = "24px", width = "24px", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} viewBox="0 0 20 20" fill="none">
         <path
             d="M7.5 10.75C7.91421 10.75 8.25 10.4142 8.25 10C8.25 9.58579 7.91421 9.25 7.5 9.25C7.08579 9.25 6.75 9.58579 6.75 10C6.75 10.4142 7.08579 10.75 7.5 10.75Z"
             stroke="currentColor"
@@ -958,8 +1171,8 @@ export const DotsSix = ({ height = "24px", width = "24px", ...props }: IconSvgPr
     </svg>
 );
 
-export const EllipsisHorizontal = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} viewBox="0 0 20 20" fill="none">
+export const EllipsisHorizontal = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} viewBox="0 0 20 20" fill="none">
         <path
             d="M10 10.75C10.4142 10.75 10.75 10.4142 10.75 10C10.75 9.58579 10.4142 9.25 10 9.25C9.58579 9.25 9.25 9.58579 9.25 10C9.25 10.4142 9.58579 10.75 10 10.75Z"
             stroke="currentColor"
@@ -984,8 +1197,8 @@ export const EllipsisHorizontal = ({ height = "20", width = "20", ...props }: Ic
     </svg>
 );
 
-export const EllipsisVertical = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const EllipsisVertical = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeWidth="1.5"
@@ -994,8 +1207,8 @@ export const EllipsisVertical = ({ height = "20", width = "20", ...props }: Icon
     </svg>
 );
 
-export const Excel = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg fill="none" width={width} height={height} {...props} viewBox="0 0 20 20">
+export const Excel = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg fill="none" width={width} height={height} {...attributes} viewBox="0 0 20 20">
         <path
             d="M13.333 17.5H14.1663C14.8294 17.5 15.4653 17.2366 15.9341 16.7678C16.4029 16.2989 16.6663 15.663 16.6663 15V7.09109C16.6663 6.42805 16.4029 5.79217 15.9341 5.32333L13.843 3.23223C13.3742 2.76339 12.7383 2.5 12.0752 2.5H5.83301C5.16997 2.5 4.53408 2.76339 4.06524 3.23223C3.5964 3.70107 3.33301 4.33696 3.33301 5V7.5"
             stroke="#2DD4BF"
@@ -1022,8 +1235,8 @@ export const Excel = ({ height = "20", width = "20", ...props }: IconSvgProps) =
     </svg>
 );
 
-export const Folder = ({ height = "18", width = "18", ...props }: IconSvgProps) => (
-    <svg width={width} height={height} {...props} viewBox="0 0 20 20" fill="none">
+export const Folder = ({ height = "18", width = "18", ...attributes }: IconSvgProps) => (
+    <svg width={width} height={height} {...attributes} viewBox="0 0 20 20" fill="none">
         <path
             d="M3.49557 8.24663C3.58387 8.23322 3.67454 8.22613 3.76678 8.22613H16.2328C16.325 8.22613 16.4157 8.23322 16.504 8.24663M3.49557 8.24663C3.03418 8.31808 2.61956 8.56856 2.34165 8.94373C2.06373 9.31891 1.94494 9.78852 2.01103 10.2507L2.68668 14.9811C2.74703 15.4037 2.95781 15.7905 3.28032 16.0703C3.60284 16.3501 4.01546 16.5041 4.44243 16.5042H15.5579C15.9849 16.5041 16.3975 16.3501 16.72 16.0703C17.0426 15.7905 17.2533 15.4037 17.3137 14.9811L17.9893 10.2507C18.0554 9.78852 17.9366 9.31891 17.6587 8.94373C17.3808 8.56856 16.9654 8.31808 16.504 8.24663M3.49557 8.24663L3.49636 5.26967C3.49636 4.79934 3.68314 4.34827 4.01564 4.01562C4.34813 3.68298 4.79912 3.496 5.26945 3.49579H8.32761C8.64115 3.49606 8.94174 3.62084 9.16331 3.84268L10.8363 5.51407C11.0578 5.73591 11.3584 5.86068 11.672 5.86096H14.7301C15.2006 5.86096 15.6518 6.04785 15.9844 6.38051C16.3171 6.71318 16.504 7.16437 16.504 7.63484V8.24663"
             stroke="currentColor"
@@ -1034,8 +1247,14 @@ export const Folder = ({ height = "18", width = "18", ...props }: IconSvgProps) 
     </svg>
 );
 
-export const Tag = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const Naira = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4 10h16M4 14h16M12 4v16M6 4l12 16M18 4L6 20" />
+    </svg>
+);
+
+export const Tag = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -1047,8 +1266,8 @@ export const Tag = ({ height = "20", width = "20", ...props }: IconSvgProps) => 
     </svg>
 );
 
-export const TagSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const TagSolid = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             fill="currentColor"
             fillRule="evenodd"
@@ -1094,8 +1313,8 @@ export const TriangleUpMini = ({ height = "15", width = "15", ...attributes }: I
     </svg>
 );
 
-export const User = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const User = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -1106,8 +1325,8 @@ export const User = ({ height = "20", width = "20", ...props }: IconSvgProps) =>
     </svg>
 );
 
-export const UserCircleMini = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const UserCircleMini = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -1118,8 +1337,8 @@ export const UserCircleMini = ({ height = "20", width = "20", ...props }: IconSv
     </svg>
 );
 
-export const UserGroup = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const UserGroup = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -1130,8 +1349,8 @@ export const UserGroup = ({ height = "20", width = "20", ...props }: IconSvgProp
     </svg>
 );
 
-export const Users = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const Users = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -1142,8 +1361,8 @@ export const Users = ({ height = "20", width = "20", ...props }: IconSvgProps) =
     </svg>
 );
 
-export const UsersSolid = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const UsersSolid = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             fill="currentColor"
             d="M4.018 5.513a3.29 3.29 0 1 1 6.58 0 3.29 3.29 0 0 1-6.58 0Zm7.776 1.795a2.692 2.692 0 1 1 5.384 0 2.692 2.692 0 0 1-5.384 0ZM1.625 15.683a5.683 5.683 0 0 1 11.366 0v.097a.598.598 0 0 1-.29.503 10.423 10.423 0 0 1-5.393 1.494c-1.972 0-3.817-.546-5.392-1.494a.598.598 0 0 1-.29-.503l-.001-.097Zm12.562.002v.115a1.794 1.794 0 0 1-.186.766 8.047 8.047 0 0 0 4.036-.806.6.6 0 0 0 .335-.513 3.89 3.89 0 0 0-5.55-3.677 6.848 6.848 0 0 1 1.365 4.113v.002Z"
@@ -1151,8 +1370,8 @@ export const UsersSolid = ({ height = "20", width = "20", ...props }: IconSvgPro
     </svg>
 );
 
-export const Window = ({ height = "20", width = "20", ...props }: IconSvgProps) => (
-    <svg width={width} {...props} height={height} fill="none">
+export const Window = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
