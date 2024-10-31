@@ -958,6 +958,15 @@ export const CalendarSolid = ({ height = "20", width = "20", ...attributes }: Ic
     </svg>
 );
 
+export const ChartBar = ({ height = "24", width = "24", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+        <path d="M7 16h8"></path>
+        <path d="M7 11h12"></path>
+        <path d="M7 6h3"></path>
+    </svg>
+);
+
 export const Check = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} fill="none">
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m3.75 10.625 5 5 7.5-11.25"></path>

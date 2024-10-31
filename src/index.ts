@@ -36,6 +36,7 @@ export {
     CalendarSolid,
     CalendarIcon,
     CancelIcon,
+    ChartBar,
     ChatBubble,
     ChatBubbleLeftRight,
     ChatBubbleLeftRightSolid,
