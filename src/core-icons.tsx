@@ -1133,6 +1133,12 @@ export const DocumentTextSolid = ({ height = "20", width = "20", ...attributes }
     </svg>
 );
 
+export const Dot = ({ height = "24px", width = "24px", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} style={{ strokeWidth: 8 }} viewBox="0 0 20 20">
+        <circle cx="10" cy="10" r="9" />
+    </svg>
+);
+
 export const DotsSix = ({ height = "24px", width = "24px", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} viewBox="0 0 20 20" fill="none">
         <path
@@ -1259,6 +1265,29 @@ export const Folder = ({ height = "18", width = "18", ...attributes }: IconSvgPr
 export const Naira = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 10h16M4 14h16M12 4v16M6 4l12 16M18 4L6 20" />
+    </svg>
+);
+
+export const Send = ({ height = "16", width = "17", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height}>
+        <path
+            fill="currentColor"
+            fillRule="evenodd"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M1 1l2.166 5.39 8.5 1.564-8.5 1.666L1 15l16-7z"
+        />
+    </svg>
+);
+
+export const Smiley = ({ height = "16", width = "16", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height}>
+        <path
+            fill="#687882"
+            fillRule="evenodd"
+            d="M8 16c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zM8 1.333A6.674 6.674 0 0 0 1.333 8 6.674 6.674 0 0 0 8 14.667 6.674 6.674 0 0 0 14.667 8 6.674 6.674 0 0 0 8 1.333zm0 12c-1.942 0-3.705-1.167-4.601-3.046A.666.666 0 1 1 4.6 9.713C5.275 11.123 6.577 12 8 12c1.431 0 2.733-.875 3.397-2.285a.666.666 0 1 1 1.206.57c-.886 1.88-2.65 3.048-4.603 3.048zM10.667 8a1.335 1.335 0 0 1-1.334-1.333 1.335 1.335 0 0 1 2.667 0C12 7.402 11.402 8 10.667 8zM5.333 8A1.335 1.335 0 0 1 4 6.667c0-.736.599-1.334 1.333-1.334a1.335 1.335 0 0 1 0 2.667z"
+        />
     </svg>
 );
 
