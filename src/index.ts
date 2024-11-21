@@ -80,6 +80,8 @@ export {
     InformationCircleSolid,
     HomeIcon,
     LocationIcon,
+    LogIn,
+    LogOut,
     MagnifyingGlassMini,
     MinusIcon,
     Naira,

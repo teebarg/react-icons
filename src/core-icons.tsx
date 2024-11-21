@@ -1262,6 +1262,22 @@ export const Folder = ({ height = "18", width = "18", ...attributes }: IconSvgPr
     </svg>
 );
 
+export const LogIn = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} stroke="currentColor" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+        <polyline points="10 17 15 12 10 7"></polyline>
+        <line x1="15" y1="12" x2="3" y2="12"></line>
+    </svg>
+);
+
+export const LogOut = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} stroke="currentColor" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+        <polyline points="16 17 21 12 16 7"></polyline>
+        <line x1="21" y1="12" x2="9" y2="12"></line>
+    </svg>
+);
+
 export const Naira = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 10h16M4 14h16M12 4v16M6 4l12 16M18 4L6 20" />
