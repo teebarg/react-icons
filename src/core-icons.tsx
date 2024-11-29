@@ -211,7 +211,7 @@ export const DeleteIcon = ({ size = 16, height = "1em", width = "1em", ...attrib
     </svg>
 );
 
-export const MailIcon = ({ height = "24", width = "24", ...attributes }: IconSvgProps) => (
+export const Mail = ({ height = "24", width = "24", ...attributes }: IconSvgProps) => (
     <svg viewBox="0 0 24 24" width={width} height={height} {...attributes}>
         <path
             fill="currentColor"
@@ -802,7 +802,7 @@ export const ArrowLongUp = ({ height = "15", width = "15", ...attributes }: Icon
     </svg>
 );
 
-export const ArrrowRight = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
+export const ArrowRight = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
@@ -1287,6 +1287,14 @@ export const Folder = ({ height = "18", width = "18", ...attributes }: IconSvgPr
     </svg>
 );
 
+export const Headphones = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} stroke="currentColor" fill="currentColor" strokeWidth="0" version="1.1" viewBox="0 0 16 16">
+        <path d="M4.5 9h-1v7h1c0.275 0 0.5-0.225 0.5-0.5v-6c0-0.275-0.225-0.5-0.5-0.5z"></path>
+        <path d="M11.5 9c-0.275 0-0.5 0.225-0.5 0.5v6c0 0.275 0.225 0.5 0.5 0.5h1v-7h-1z"></path>
+        <path d="M16 8c0-4.418-3.582-8-8-8s-8 3.582-8 8c0 0.96 0.169 1.88 0.479 2.732-0.304 0.519-0.479 1.123-0.479 1.768 0 1.763 1.304 3.222 3 3.464v-6.928c-0.499 0.071-0.963 0.248-1.371 0.506-0.084-0.417-0.129-0.849-0.129-1.292 0-3.59 2.91-6.5 6.5-6.5s6.5 2.91 6.5 6.5c0 0.442-0.044 0.874-0.128 1.292-0.408-0.259-0.873-0.435-1.372-0.507v6.929c1.696-0.243 3-1.701 3-3.464 0-0.645-0.175-1.249-0.479-1.768 0.31-0.853 0.479-1.773 0.479-2.732z"></path>
+    </svg>
+);
+
 export const LogIn = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} stroke="currentColor" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
@@ -1309,6 +1317,22 @@ export const Naira = ({ height = "20", width = "20", ...attributes }: IconSvgPro
     </svg>
 );
 
+export const PhoneCall = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        width={width}
+        {...attributes}
+        height={height}
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+);
+
 export const Send = ({ height = "16", width = "17", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height}>
         <path
@@ -1319,6 +1343,12 @@ export const Send = ({ height = "16", width = "17", ...attributes }: IconSvgProp
             strokeLinejoin="round"
             d="M1 1l2.166 5.39 8.5 1.564-8.5 1.666L1 15l16-7z"
         />
+    </svg>
+);
+
+export const Shield = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg width={width} {...attributes} height={height} stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512">
+        <path d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0z"></path>
     </svg>
 );
 
