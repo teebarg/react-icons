@@ -3,7 +3,7 @@ export { MoonFilledIcon, SunFilledIcon, HeartFilledIcon, HeartIcon } from "./ico
 export { MasterCardIcon, PayPalIcon, VisaCardIcon, CreditCard } from "./icons/payment";
 export { Cart, Delivery, Package, Truck } from "./icons/e-commerce";
 export {
-    SearchIcon,
+    Search,
     ExclamationIcon,
     EyeSlashFilledIcon,
     EyeFilledIcon,
@@ -102,7 +102,7 @@ export {
     Smiley,
     Spinner,
     SquareIcon,
-    StarIcon,
+    Star,
     Tag,
     TagSolid,
     Tags,

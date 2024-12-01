@@ -1,7 +1,7 @@
 import { IconSvgProps } from "./types";
 import * as React from "react";
 
-export const SearchIcon = ({ width = "1em", height = "1em", ...attributes }: IconSvgProps) => (
+export const Search = ({ width = "1em", height = "1em", ...attributes }: IconSvgProps) => (
     <svg viewBox="0 0 24 24" width={width} {...attributes} height={height} fill="none" focusable="false" role="presentation">
         <path
             d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
@@ -356,7 +356,7 @@ export const TemplateIcon = ({ strokeWidth = 1.5, size, height = "18", width = "
     );
 };
 
-export const StarIcon = ({ size, height, width, ...attributes }: IconSvgProps) => {
+export const Star = ({ size, height, width, ...attributes }: IconSvgProps) => {
     return (
         <svg width={size || width} height={size || height} {...attributes} aria-hidden="true" viewBox="0 0 24 24">
             <path
