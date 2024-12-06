@@ -911,6 +911,26 @@ export const Bell = ({ height = "24px", width = "24px", ...attributes }: IconSvg
     </svg>
 );
 
+export const BellOff = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        width={width}
+        height={height}
+        {...attributes}
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+        <path d="M18.63 13A17.89 17.89 0 0 1 18 8"></path>
+        <path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path>
+        <path d="M18 8a6 6 0 0 0-9.33-5"></path>
+        <line x1="1" y1="1" x2="23" y2="23"></line>
+    </svg>
+);
+
 export const Bot = ({ height = "64", width = "64", ...attributes }: IconSvgProps) => (
     <svg width={width} height={height} {...attributes} viewBox="0 0 64 64">
         <rect x="12" y="20" width="40" height="32" rx="8" ry="8" fill="#4CAF50" />

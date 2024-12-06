@@ -29,6 +29,7 @@ export {
     ArrowsPointingOut,
     AttachmentIcon,
     Bell,
+    BellOff,
     Bot,
     Calendar,
     CalendarMini,
