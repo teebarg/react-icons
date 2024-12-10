@@ -81,6 +81,7 @@ export {
     InformationCircleSolid,
     Headphones,
     HomeIcon,
+    Loader,
     LocationIcon,
     LogIn,
     LogOut,
