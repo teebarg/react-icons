@@ -1034,6 +1034,12 @@ export const Clock = ({ height = "1em", width = "1em", ...attributes }: IconSvgP
     </svg>
 );
 
+export const Collection = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 16 16" width={width} {...attributes} height={height}>
+        <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"></path>
+    </svg>
+);
+
 export const Component = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} fill="none">
         <path
@@ -1292,6 +1298,24 @@ export const Headphones = ({ height = "1em", width = "1em", ...attributes }: Ico
         <path d="M4.5 9h-1v7h1c0.275 0 0.5-0.225 0.5-0.5v-6c0-0.275-0.225-0.5-0.5-0.5z"></path>
         <path d="M11.5 9c-0.275 0-0.5 0.225-0.5 0.5v6c0 0.275 0.225 0.5 0.5 0.5h1v-7h-1z"></path>
         <path d="M16 8c0-4.418-3.582-8-8-8s-8 3.582-8 8c0 0.96 0.169 1.88 0.479 2.732-0.304 0.519-0.479 1.123-0.479 1.768 0 1.763 1.304 3.222 3 3.464v-6.928c-0.499 0.071-0.963 0.248-1.371 0.506-0.084-0.417-0.129-0.849-0.129-1.292 0-3.59 2.91-6.5 6.5-6.5s6.5 2.91 6.5 6.5c0 0.442-0.044 0.874-0.128 1.292-0.408-0.259-0.873-0.435-1.372-0.507v6.929c1.696-0.243 3-1.701 3-3.464 0-0.645-0.175-1.249-0.479-1.768 0.31-0.853 0.479-1.773 0.479-2.732z"></path>
+    </svg>
+);
+
+export const Help = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        width={width}
+        {...attributes}
+        height={height}
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+        <line x1="12" y1="17" x2="12.01" y2="17"></line>
     </svg>
 );
 
