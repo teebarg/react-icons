@@ -14,7 +14,7 @@ export const Search = ({ width = "1em", height = "1em", ...attributes }: IconSvg
     </svg>
 );
 
-export const EyeSlashFilledIcon = ({ width = "1em", height = "1em", ...attributes }: IconSvgProps) => (
+export const EyeSlashFilled = ({ width = "1em", height = "1em", ...attributes }: IconSvgProps) => (
     <svg viewBox="0 0 24 24" width={width} {...attributes} height={height} fill="none" focusable="false" role="presentation">
         <path
             d="M21.2714 9.17834C20.9814 8.71834 20.6714 8.28834 20.3514 7.88834C19.9814 7.41834 19.2814 7.37834 18.8614 7.79834L15.8614 10.7983C16.0814 11.4583 16.1214 12.2183 15.9214 13.0083C15.5714 14.4183 14.4314 15.5583 13.0214 15.9083C12.2314 16.1083 11.4714 16.0683 10.8114 15.8483C10.8114 15.8483 9.38141 17.2783 8.35141 18.3083C7.85141 18.8083 8.01141 19.6883 8.68141 19.9483C9.75141 20.3583 10.8614 20.5683 12.0014 20.5683C13.7814 20.5683 15.5114 20.0483 17.0914 19.0783C18.7014 18.0783 20.1514 16.6083 21.3214 14.7383C22.2714 13.2283 22.2214 10.6883 21.2714 9.17834Z"
@@ -39,7 +39,7 @@ export const EyeSlashFilledIcon = ({ width = "1em", height = "1em", ...attribute
     </svg>
 );
 
-export const EyeFilledIcon = ({ width = "1em", height = "1em", ...attributes }: IconSvgProps) => (
+export const EyeFilled = ({ width = "1em", height = "1em", ...attributes }: IconSvgProps) => (
     <svg fill="none" focusable="false" height={height} role="presentation" viewBox="0 0 24 24" width={width} {...attributes}>
         <path
             d="M21.25 9.14969C18.94 5.51969 15.56 3.42969 12 3.42969C10.22 3.42969 8.49 3.94969 6.91 4.91969C5.33 5.89969 3.91 7.32969 2.75 9.14969C1.75 10.7197 1.75 13.2697 2.75 14.8397C5.06 18.4797 8.44 20.5597 12 20.5597C13.78 20.5597 15.51 20.0397 17.09 19.0697C18.67 18.0897 20.09 16.6597 21.25 14.8397C22.25 13.2797 22.25 10.7197 21.25 9.14969ZM12 16.0397C9.76 16.0397 7.96 14.2297 7.96 11.9997C7.96 9.76969 9.76 7.95969 12 7.95969C14.24 7.95969 16.04 9.76969 16.04 11.9997C16.04 14.2297 14.24 16.0397 12 16.0397Z"
@@ -133,7 +133,7 @@ export const CheckIcon = ({ strokeWidth = 1.5, size, height, width, ...attribute
     );
 };
 
-export const EyeIcon = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+export const Eye = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg aria-hidden="true" fill="none" focusable="false" role="presentation" viewBox="0 0 20 20" width={width} height={height} {...attributes}>
         <path
             d="M12.9833 10C12.9833 11.65 11.65 12.9833 10 12.9833C8.35 12.9833 7.01666 11.65 7.01666 10C7.01666 8.35 8.35 7.01666 10 7.01666C11.65 7.01666 12.9833 8.35 12.9833 10Z"
@@ -911,6 +911,26 @@ export const Bell = ({ height = "24px", width = "24px", ...attributes }: IconSvg
     </svg>
 );
 
+export const BellOff = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        width={width}
+        height={height}
+        {...attributes}
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+        <path d="M18.63 13A17.89 17.89 0 0 1 18 8"></path>
+        <path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path>
+        <path d="M18 8a6 6 0 0 0-9.33-5"></path>
+        <line x1="1" y1="1" x2="23" y2="23"></line>
+    </svg>
+);
+
 export const Bot = ({ height = "64", width = "64", ...attributes }: IconSvgProps) => (
     <svg width={width} height={height} {...attributes} viewBox="0 0 64 64">
         <rect x="12" y="20" width="40" height="32" rx="8" ry="8" fill="#4CAF50" />
@@ -1298,6 +1318,22 @@ export const Headphones = ({ height = "1em", width = "1em", ...attributes }: Ico
         <path d="M4.5 9h-1v7h1c0.275 0 0.5-0.225 0.5-0.5v-6c0-0.275-0.225-0.5-0.5-0.5z"></path>
         <path d="M11.5 9c-0.275 0-0.5 0.225-0.5 0.5v6c0 0.275 0.225 0.5 0.5 0.5h1v-7h-1z"></path>
         <path d="M16 8c0-4.418-3.582-8-8-8s-8 3.582-8 8c0 0.96 0.169 1.88 0.479 2.732-0.304 0.519-0.479 1.123-0.479 1.768 0 1.763 1.304 3.222 3 3.464v-6.928c-0.499 0.071-0.963 0.248-1.371 0.506-0.084-0.417-0.129-0.849-0.129-1.292 0-3.59 2.91-6.5 6.5-6.5s6.5 2.91 6.5 6.5c0 0.442-0.044 0.874-0.128 1.292-0.408-0.259-0.873-0.435-1.372-0.507v6.929c1.696-0.243 3-1.701 3-3.464 0-0.645-0.175-1.249-0.479-1.768 0.31-0.853 0.479-1.773 0.479-2.732z"></path>
+    </svg>
+);
+
+export const Loader = ({ height = "32", width = "32", ...attributes }: IconSvgProps) => (
+    <svg
+        width={width}
+        {...attributes}
+        height={height}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
     </svg>
 );
 
