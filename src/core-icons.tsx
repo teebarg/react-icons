@@ -490,7 +490,7 @@ export const FavouriteIcon = ({ size = 24, width, height, ...attributes }: IconS
     </svg>
 );
 
-export const HomeIcon = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
+export const Home = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
     <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...attributes}>
         <path
             d="M3 9.5L12 3L21 9.5V19C21 19.55 20.55 20 20 20H4C3.45 20 3 19.55 3 19V9.5Z"
@@ -503,7 +503,7 @@ export const HomeIcon = ({ size = 24, width, height, ...attributes }: IconSvgPro
     </svg>
 );
 
-export const ArrowLeftIcon = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
+export const ArrowLeft = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
     <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...attributes}>
         <path d="M15 6L9 12L15 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
@@ -1483,7 +1483,7 @@ export const TriangleUpMini = ({ height = "15", width = "15", ...attributes }: I
 );
 
 export const User = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
-    <svg width={width} {...attributes} height={height} fill="none">
+    <svg width={width} {...attributes} height={height} fill="none" viewBox="0 0 20 20">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -1495,7 +1495,7 @@ export const User = ({ height = "20", width = "20", ...attributes }: IconSvgProp
 );
 
 export const UserCircleMini = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
-    <svg width={width} {...attributes} height={height} fill="none">
+    <svg viewBox="0 0 20 20" width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -1507,7 +1507,7 @@ export const UserCircleMini = ({ height = "20", width = "20", ...attributes }: I
 );
 
 export const UserGroup = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
-    <svg width={width} {...attributes} height={height} fill="none">
+    <svg viewBox="0 0 20 20" width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -1519,7 +1519,7 @@ export const UserGroup = ({ height = "20", width = "20", ...attributes }: IconSv
 );
 
 export const Users = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
-    <svg width={width} {...attributes} height={height} fill="none">
+    <svg viewBox="0 0 20 20" width={width} {...attributes} height={height} fill="none">
         <path
             stroke="currentColor"
             strokeLinecap="round"
@@ -1531,7 +1531,7 @@ export const Users = ({ height = "20", width = "20", ...attributes }: IconSvgPro
 );
 
 export const UsersSolid = ({ height = "20", width = "20", ...attributes }: IconSvgProps) => (
-    <svg width={width} {...attributes} height={height} fill="none">
+    <svg viewBox="0 0 20 20" width={width} {...attributes} height={height} fill="none">
         <path
             fill="currentColor"
             d="M4.018 5.513a3.29 3.29 0 1 1 6.58 0 3.29 3.29 0 0 1-6.58 0Zm7.776 1.795a2.692 2.692 0 1 1 5.384 0 2.692 2.692 0 0 1-5.384 0ZM1.625 15.683a5.683 5.683 0 0 1 11.366 0v.097a.598.598 0 0 1-.29.503 10.423 10.423 0 0 1-5.393 1.494c-1.972 0-3.817-.546-5.392-1.494a.598.598 0 0 1-.29-.503l-.001-.097Zm12.562.002v.115a1.794 1.794 0 0 1-.186.766 8.047 8.047 0 0 0 4.036-.806.6.6 0 0 0 .335-.513 3.89 3.89 0 0 0-5.55-3.677 6.848 6.848 0 0 1 1.365 4.113v.002Z"

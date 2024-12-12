@@ -1,7 +1,7 @@
 export { DiscordIcon, TwitterIcon, GithubIcon, FacebookIcon, YoutubeIcon, WhatsAppIcon } from "./icons/social";
 export { MoonFilledIcon, SunFilledIcon, HeartFilled, Heart } from "./icons/theme";
 export { MasterCardIcon, PayPalIcon, VisaCardIcon, CreditCard } from "./icons/payment";
-export { Cart, Delivery, Package, Truck } from "./icons/e-commerce";
+export { Cart, Delivery, Package, Truck, Checkout } from "./icons/e-commerce";
 export {
     Search,
     ExclamationIcon,
@@ -10,7 +10,7 @@ export {
     VerticalDotsIcon,
     Activity,
     AdminIcon,
-    ArrowLeftIcon,
+    ArrowLeft,
     ArrowLongDown,
     ArrowLongLeft,
     ArrowLongRight,
@@ -82,7 +82,7 @@ export {
     InformationCircleSolid,
     Headphones,
     Help,
-    HomeIcon,
+    Home,
     Loader,
     LocationIcon,
     LogIn,
