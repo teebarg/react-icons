@@ -1,5 +1,5 @@
 export { DiscordIcon, TwitterIcon, GithubIcon, FacebookIcon, YoutubeIcon, WhatsAppIcon } from "./icons/social";
-export { MoonFilledIcon, SunFilledIcon, HeartFilled, Heart } from "./icons/theme";
+export { Moon, MoonFilled, Sun, SunFilled, HeartFilled, Heart } from "./icons/theme";
 export { MasterCardIcon, PayPalIcon, VisaCardIcon, CreditCard } from "./icons/payment";
 export { Cart, Delivery, Package, Truck, Checkout } from "./icons/e-commerce";
 export {
