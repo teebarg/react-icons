@@ -52,6 +52,7 @@ export {
     ChevronRight,
     ChevronRightMini,
     Clock,
+    CloudOff,
     Collection,
     Component,
     ComponentSolid,
@@ -127,5 +128,6 @@ export {
     XMark,
     XMarkMini,
     VoiceIcon,
+    WifiOff,
     Window,
 } from "./core-icons";
