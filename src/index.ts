@@ -93,6 +93,7 @@ export {
     MinusIcon,
     Naira,
     NotificationIcon,
+    PackageSearch,
     PenPlus,
     Pencil,
     PencilSquare,
