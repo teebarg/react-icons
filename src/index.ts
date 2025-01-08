@@ -105,6 +105,7 @@ export {
     RightArrowIcon,
     Send,
     Shield,
+    SlidersHorizontal,
     Smiley,
     Spinner,
     SquareIcon,
