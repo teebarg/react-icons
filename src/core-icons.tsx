@@ -221,10 +221,13 @@ export const Mail = ({ height = "24", width = "24", ...attributes }: IconSvgProp
     </svg>
 );
 
-export const LocationIcon = ({ height = "24", width = "24", ...attributes }: IconSvgProps) => (
+export const Location = ({ height = "24", width = "24", ...attributes }: IconSvgProps) => (
     <svg viewBox="0 0 24 24" width={width} height={height} {...attributes}>
-        <path d="M12 2C8.1 2 5 5.1 5 9c0 4.9 7 13 7 13s7-8.1 7-13c0-3.9-3.1-7-7-7zm0 17.2c-1.5-1.8-6-7.5-6-11.2 0-3.3 2.7-6 6-6s6 2.7 6 6c0 3.7-4.5 9.4-6 11.2z" />
-        <circle cx="12" cy="9" r="2.5" />
+        <path
+            fill="currentColor"
+            d="M12 2C8.1 2 5 5.1 5 9c0 4.9 7 13 7 13s7-8.1 7-13c0-3.9-3.1-7-7-7zm0 17.2c-1.5-1.8-6-7.5-6-11.2 0-3.3 2.7-6 6-6s6 2.7 6 6c0 3.7-4.5 9.4-6 11.2z"
+        />
+        <circle fill="currentColor" cx="12" cy="9" r="2.5" />
     </svg>
 );
 

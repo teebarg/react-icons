@@ -88,7 +88,7 @@ export {
     Help,
     Home,
     Loader,
-    LocationIcon,
+    Location,
     LogIn,
     LogOut,
     MagnifyingGlassMini,
