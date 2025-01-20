@@ -231,7 +231,7 @@ export const Location = ({ height = "24", width = "24", ...attributes }: IconSvg
     </svg>
 );
 
-export const CancelIcon = ({ strokeWidth = 1.5, size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
+export const Cancel = ({ strokeWidth = 1.5, size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
     <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes}>
         <path
             fill="currentColor"
@@ -464,7 +464,7 @@ export const SquareIcon = ({ size, height = "24", width = "24", ...attributes }:
     );
 };
 
-export const ExclamationIcon = ({ size, height = "20", width = "20", ...attributes }: IconSvgProps) => {
+export const Exclamation = ({ size, height = "20", width = "20", ...attributes }: IconSvgProps) => {
     return (
         <svg viewBox="0 0 24 24" fill="currentColor" width={size || width} height={size || height} {...attributes}>
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
@@ -1330,6 +1330,25 @@ export const Excel = ({ height = "20", width = "20", ...attributes }: IconSvgPro
         />
         <path d="M10.833 13.75H3.33301" stroke="#2DD4BF" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" />
         <path d="M7.08301 10V17.5" stroke="#2DD4BF" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" />
+    </svg>
+);
+
+export const Expand = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <path d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8"></path>
+        <path d="M3 16.2V21m0 0h4.8M3 21l6-6"></path>
+        <path d="M21 7.8V3m0 0h-4.8M21 3l-6 6"></path>
+        <path d="M3 7.8V3m0 0h4.8M3 3l6 6"></path>
     </svg>
 );
 

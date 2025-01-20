@@ -4,7 +4,7 @@ export { MasterCardIcon, PayPalIcon, VisaCardIcon, CreditCard } from "./icons/pa
 export { Cart, Delivery, Package, Truck, Checkout } from "./icons/e-commerce";
 export {
     Search,
-    ExclamationIcon,
+    Exclamation,
     EyeSlashFilled,
     EyeFilled,
     VerticalDotsIcon,
@@ -36,7 +36,7 @@ export {
     CalendarMini,
     CalendarSolid,
     CalendarIcon,
-    CancelIcon,
+    Cancel,
     ChartBar,
     ChatBubble,
     ChatBubbleLeftRight,
@@ -79,6 +79,7 @@ export {
     EllipsisVertical,
     EmojiIcon,
     Excel,
+    Expand,
     Eye,
     FavouriteIcon,
     Folder,
