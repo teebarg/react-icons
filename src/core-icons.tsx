@@ -1222,6 +1222,24 @@ export const Dot = ({ height = "24px", width = "24px", ...attributes }: IconSvgP
     </svg>
 );
 
+export const Download = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        {...attributes}
+        height={height}
+    >
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" x2="12" y1="15" y2="3"></line>
+    </svg>
+);
+
 export const DotsSix = ({ height = "24px", width = "24px", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} viewBox="0 0 20 20" fill="none">
         <path
@@ -1481,6 +1499,24 @@ export const Send = ({ height = "16", width = "17", ...attributes }: IconSvgProp
 export const Shield = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512">
         <path d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0z"></path>
+    </svg>
+);
+
+export const ShoppingBag = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        {...attributes}
+        height={height}
+    >
+        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+        <path d="M3 6h18"></path>
+        <path d="M16 10a4 4 0 0 1-8 0"></path>
     </svg>
 );
 
