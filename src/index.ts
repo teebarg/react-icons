@@ -110,6 +110,7 @@ export {
     RightArrowIcon,
     Send,
     Shield,
+    ShieldCheck,
     ShoppingBag,
     SlidersHorizontal,
     Smiley,
