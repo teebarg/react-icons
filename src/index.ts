@@ -95,6 +95,7 @@ export {
     LogOut,
     MagnifyingGlassMini,
     Mail,
+    Menu,
     MinusIcon,
     Naira,
     NotificationIcon,
