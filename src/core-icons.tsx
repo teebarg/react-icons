@@ -401,7 +401,7 @@ export const CopyIcon = ({ height = "1em", width = "1em", ...attributes }: IconS
     );
 };
 
-export const ThumbsUpIcon = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => {
+export const ThumbsUp = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => {
     return (
         <svg width={width} height={height} {...attributes} aria-hidden="true" viewBox="0 0 16 16">
             <path
@@ -422,7 +422,7 @@ export const Tags = ({ height = "1em", width = "1em", ...attributes }: IconSvgPr
     );
 };
 
-export const ThumbsDownIcon = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => {
+export const ThumbsDown = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => {
     return (
         <svg width={width} height={height} {...attributes} aria-hidden="true" viewBox="0 0 16 16">
             <path
@@ -1370,6 +1370,22 @@ export const Expand = ({ height = "1em", width = "1em", ...attributes }: IconSvg
     </svg>
 );
 
+export const Filter = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+    </svg>
+);
+
 export const Folder = ({ height = "18", width = "18", ...attributes }: IconSvgProps) => (
     <svg width={width} height={height} {...attributes} viewBox="0 0 20 20" fill="none">
         <path
@@ -1464,6 +1480,16 @@ export const Naira = ({ height = "20", width = "20", ...attributes }: IconSvgPro
     </svg>
 );
 
+export const Overview = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" width={width} {...attributes} height={height}>
+        <path
+            fill="none"
+            strokeWidth="2"
+            d="M18.5,21 C20.9852814,21 23,18.9852814 23,16.5 C23,14.0147186 20.9852814,12 18.5,12 C16.0147186,12 14,14.0147186 14,16.5 C14,18.9852814 16.0147186,21 18.5,21 L18.5,21 Z M10,7 L14,7 M1.5,14.5 C1.5,14.5 5.5,5 6,4 C6.5,3 7.5,3 8,3 C8.5,3 10,3 10,5 L10,16 M5.5,21 C3.01471863,21 1,18.9852814 1,16.5 C1,14.0147186 3.01471863,12 5.5,12 C7.98528137,12 10,14.0147186 10,16.5 C10,18.9852814 7.98528137,21 5.5,21 L5.5,21 L5.5,21 Z M22.5,14.5 C22.5,14.5 18.5,5 18,4 C17.5,3 16.5,3 16,3 C15.5,3 14,3 14,5 L14,16 M10,16 L14,16"
+        ></path>
+    </svg>
+);
+
 export const PackageSearch = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg
         stroke="currentColor"
@@ -1517,6 +1543,24 @@ export const Send = ({ height = "16", width = "17", ...attributes }: IconSvgProp
 export const Shield = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512">
         <path d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0z"></path>
+    </svg>
+);
+
+export const ShieldAlert = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        {...attributes}
+        height={height}
+    >
+        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+        <path d="M12 8v4"></path>
+        <path d="M12 16h.01"></path>
     </svg>
 );
 
