@@ -58,7 +58,7 @@ export const MinusIcon = ({ size = 24, width, height, ...attributes }: IconSvgPr
     </svg>
 );
 
-export const VerticalDotsIcon = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
+export const VerticalDots = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
     <svg
         aria-hidden="true"
         fill="none"
@@ -241,7 +241,7 @@ export const Cancel = ({ strokeWidth = 1.5, size = 24, height = "24", width = "2
     </svg>
 );
 
-export const AdminIcon = ({ size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
+export const Admin = ({ size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
     <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes}>
         <path
             fill="currentColor"
@@ -739,6 +739,23 @@ export const Activity = ({ height = "24", width = "24", ...attributes }: IconSvg
     </svg>
 );
 
+export const Apple = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"></path>
+        <path d="M10 2c1 .5 2 2 2 5"></path>
+    </svg>
+);
+
 export const ArrowPath = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} fill="none">
         <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" clipPath="url(#a)">
@@ -889,6 +906,44 @@ export const ArrowsPointingOut = ({ height = "15", width = "15", ...attributes }
             strokeWidth="1.5"
             d="M9.056 1.944h4v4M13.056 1.944l-4 4M1.944 9.056v4h4M1.944 13.056l4-4"
         ></path>
+    </svg>
+);
+
+export const BatteryFull = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <rect width="16" height="10" x="2" y="7" rx="2" ry="2"></rect>
+        <line x1="22" x2="22" y1="11" y2="13"></line>
+        <line x1="6" x2="6" y1="11" y2="13"></line>
+        <line x1="10" x2="10" y1="11" y2="13"></line>
+        <line x1="14" x2="14" y1="11" y2="13"></line>
+    </svg>
+);
+
+export const BatteryLow = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <rect width="16" height="10" x="2" y="7" rx="2" ry="2"></rect>
+        <line x1="22" x2="22" y1="11" y2="13"></line>
+        <line x1="6" x2="6" y1="11" y2="13"></line>
     </svg>
 );
 
