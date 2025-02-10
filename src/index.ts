@@ -2,6 +2,7 @@ export { DiscordIcon, TwitterIcon, GithubIcon, FacebookIcon, YoutubeIcon, WhatsA
 export { Moon, MoonFilled, Sun, SunFilled, HeartFilled, Heart } from "./icons/theme";
 export { MasterCardIcon, PayPalIcon, VisaCardIcon, CreditCard } from "./icons/payment";
 export { Cart, Delivery, Package, Truck, Checkout } from "./icons/e-commerce";
+export { MessageCircle, MessageSquare, Mic, MicOff } from "./icons/comm";
 export {
     Activity,
     Admin,
