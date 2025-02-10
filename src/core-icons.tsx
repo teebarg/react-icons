@@ -739,6 +739,24 @@ export const Activity = ({ height = "24", width = "24", ...attributes }: IconSvg
     </svg>
 );
 
+export const AlertCircle = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+    </svg>
+);
+
 export const Apple = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg
         stroke="currentColor"
@@ -1513,6 +1531,40 @@ export const Help = ({ height = "1em", width = "1em", ...attributes }: IconSvgPr
     </svg>
 );
 
+export const Lock = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+    </svg>
+);
+
+export const LockOpen = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+        <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
+    </svg>
+);
+
 export const LogIn = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} stroke="currentColor" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
@@ -1597,6 +1649,23 @@ export const PhoneCall = ({ height = "1em", width = "1em", ...attributes }: Icon
         strokeLinejoin="round"
     >
         <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+);
+
+export const RotateCcw = ({ height = "16", width = "17", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+        <path d="M3 3v5h5"></path>
     </svg>
 );
 
