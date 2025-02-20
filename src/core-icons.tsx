@@ -265,7 +265,7 @@ export const ComponentsIcon = ({ strokeWidth = 2, size = 24, height = "24", widt
     </svg>
 );
 
-export const EcommerceIcon = ({ size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
+export const Ecommerce = ({ size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
     <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes} fill="currentColor">
         <path d="M7 4h-2V2H2v2H1v2h1v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6h1V4h-1V2h-3v2h-2V2h-2v2h-6V2H7v2zm0 2h10v12H7V6zm2 2v2h6V8H9z" />
 
@@ -481,7 +481,7 @@ export const UploadIcon = ({ size, height = "20", width = "20", ...attributes }:
     );
 };
 
-export const FavouriteIcon = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
+export const Favourite = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
     <svg aria-hidden="true" role="img" viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes}>
         <path
             fill="currentColor"
@@ -1073,8 +1073,24 @@ export const Clock = ({ height = "1em", width = "1em", ...attributes }: IconSvgP
     </svg>
 );
 
+export const Cloud = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+    </svg>
+);
+
 export const CloudOff = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
-    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" width={width} {...attributes} height={height}>
+    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" width={width} height={height} {...attributes}>
         <path fill="none" d="M0 0h24v24H0z"></path>
         <path d="M19.35 10.04A7.49 7.49 0 0 0 12 4c-1.48 0-2.85.43-4.01 1.17l1.46 1.46a5.497 5.497 0 0 1 8.05 4.87v.5H19c1.66 0 3 1.34 3 3 0 1.13-.64 2.11-1.56 2.62l1.45 1.45C23.16 18.16 24 16.68 24 15c0-2.64-2.05-4.78-4.65-4.96zM3 5.27l2.75 2.74C2.56 8.15 0 10.77 0 14c0 3.31 2.69 6 6 6h11.73l2 2L21 20.73 4.27 4 3 5.27zM7.73 10l8 8H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h1.73z"></path>
     </svg>
@@ -1370,6 +1386,24 @@ export const Expand = ({ height = "1em", width = "1em", ...attributes }: IconSvg
     </svg>
 );
 
+export const Files = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <path d="M20 7h-3a2 2 0 0 1-2-2V2"></path>
+        <path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z"></path>
+        <path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8"></path>
+    </svg>
+);
+
 export const Filter = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg
         stroke="currentColor"
@@ -1406,11 +1440,68 @@ export const Headphones = ({ height = "1em", width = "1em", ...attributes }: Ico
     </svg>
 );
 
+export const Layout = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+        <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+        <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+        <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+    </svg>
+);
+
+export const Link = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </svg>
+);
+
+export const List = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <path d="M3 12h.01"></path>
+        <path d="M3 18h.01"></path>
+        <path d="M3 6h.01"></path>
+        <path d="M8 12h13"></path>
+        <path d="M8 18h13"></path>
+        <path d="M8 6h13"></path>
+    </svg>
+);
+
 export const Loader = ({ height = "32", width = "32", ...attributes }: IconSvgProps) => (
     <svg
         width={width}
-        {...attributes}
         height={height}
+        {...attributes}
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -1420,6 +1511,25 @@ export const Loader = ({ height = "32", width = "32", ...attributes }: IconSvgPr
     >
         <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
     </svg>
+);
+
+export const Lock = ({ height = "32", width = "32", ...attributes }: IconSvgProps) => (
+    <div className="icon h2">
+        <svg
+            stroke="currentColor"
+            fill="none"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            width={width}
+            height={height}
+            {...attributes}
+        >
+            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+    </div>
 );
 
 export const Help = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
