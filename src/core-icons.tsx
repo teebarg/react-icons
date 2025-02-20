@@ -52,13 +52,13 @@ export const EyeFilled = ({ width = "1em", height = "1em", ...attributes }: Icon
     </svg>
 );
 
-export const MinusIcon = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
+export const Minus = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
     <svg viewBox="0 0 24 24" fill="none" width={size || width} height={size || height} {...attributes}>
         <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 );
 
-export const VerticalDotsIcon = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
+export const VerticalDots = ({ size = 24, width, height, ...attributes }: IconSvgProps) => (
     <svg
         aria-hidden="true"
         fill="none"
@@ -152,7 +152,7 @@ export const Eye = ({ height = "1em", width = "1em", ...attributes }: IconSvgPro
     </svg>
 );
 
-export const EditIcon = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+export const Edit = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg aria-hidden="true" fill="none" focusable="false" role="presentation" viewBox="0 0 20 20" width={width} height={height} {...attributes}>
         <path
             d="M11.05 3.00002L4.20835 10.2417C3.95002 10.5167 3.70002 11.0584 3.65002 11.4334L3.34169 14.1334C3.23335 15.1084 3.93335 15.775 4.90002 15.6084L7.58335 15.15C7.95835 15.0834 8.48335 14.8084 8.74168 14.525L15.5834 7.28335C16.7667 6.03335 17.3 4.60835 15.4583 2.86668C13.625 1.14168 12.2334 1.75002 11.05 3.00002Z"
@@ -241,7 +241,7 @@ export const Cancel = ({ strokeWidth = 1.5, size = 24, height = "24", width = "2
     </svg>
 );
 
-export const AdminIcon = ({ size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
+export const Admin = ({ size = 24, height = "24", width = "24", ...attributes }: IconSvgProps) => (
     <svg viewBox="0 0 24 24" width={size || width} height={size || height} {...attributes}>
         <path
             fill="currentColor"
@@ -307,7 +307,7 @@ export const DocumentIcon = ({ strokeWidth = 2, size = 24, height = "24", width 
     </svg>
 );
 
-export const RightArrowIcon = ({ strokeWidth = 1.5, size, height, width, ...attributes }: IconSvgProps) => {
+export const RightArrow = ({ strokeWidth = 1.5, size, height, width, ...attributes }: IconSvgProps) => {
     return (
         <svg width={size || width} height={size || height} {...attributes} fill="currentColor" viewBox="0 0 24 24">
             <path
@@ -739,6 +739,41 @@ export const Activity = ({ height = "24", width = "24", ...attributes }: IconSvg
     </svg>
 );
 
+export const AlertCircle = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+    </svg>
+);
+
+export const Apple = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"></path>
+        <path d="M10 2c1 .5 2 2 2 5"></path>
+    </svg>
+);
+
 export const ArrowPath = ({ height = "15", width = "15", ...attributes }: IconSvgProps) => (
     <svg width={width} {...attributes} height={height} fill="none">
         <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" clipPath="url(#a)">
@@ -889,6 +924,44 @@ export const ArrowsPointingOut = ({ height = "15", width = "15", ...attributes }
             strokeWidth="1.5"
             d="M9.056 1.944h4v4M13.056 1.944l-4 4M1.944 9.056v4h4M1.944 13.056l4-4"
         ></path>
+    </svg>
+);
+
+export const BatteryFull = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <rect width="16" height="10" x="2" y="7" rx="2" ry="2"></rect>
+        <line x1="22" x2="22" y1="11" y2="13"></line>
+        <line x1="6" x2="6" y1="11" y2="13"></line>
+        <line x1="10" x2="10" y1="11" y2="13"></line>
+        <line x1="14" x2="14" y1="11" y2="13"></line>
+    </svg>
+);
+
+export const BatteryLow = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <rect width="16" height="10" x="2" y="7" rx="2" ry="2"></rect>
+        <line x1="22" x2="22" y1="11" y2="13"></line>
+        <line x1="6" x2="6" y1="11" y2="13"></line>
     </svg>
 );
 
@@ -1440,6 +1513,42 @@ export const Headphones = ({ height = "1em", width = "1em", ...attributes }: Ico
     </svg>
 );
 
+export const Help = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        {...attributes}
+        height={height}
+    >
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+    </svg>
+);
+
+export const Image = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        {...attributes}
+        height={height}
+    >
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+        <polyline points="21 15 16 10 5 21"></polyline>
+    </svg>
+);
+
 export const Layout = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg
         stroke="currentColor"
@@ -1497,56 +1606,60 @@ export const List = ({ height = "1em", width = "1em", ...attributes }: IconSvgPr
     </svg>
 );
 
-export const Loader = ({ height = "32", width = "32", ...attributes }: IconSvgProps) => (
+export const Loader = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         width={width}
         height={height}
         {...attributes}
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
     >
-        <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
+        <path d="M12 2v4"></path>
+        <path d="m16.2 7.8 2.9-2.9"></path>
+        <path d="M18 12h4"></path>
+        <path d="m16.2 16.2 2.9 2.9"></path>
+        <path d="M12 18v4"></path>
+        <path d="m4.9 19.1 2.9-2.9"></path>
+        <path d="M2 12h4"></path>
+        <path d="m4.9 4.9 2.9 2.9"></path>
     </svg>
 );
 
-export const Lock = ({ height = "32", width = "32", ...attributes }: IconSvgProps) => (
-    <div className="icon h2">
-        <svg
-            stroke="currentColor"
-            fill="none"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            width={width}
-            height={height}
-            {...attributes}
-        >
-            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
-            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-        </svg>
-    </div>
-);
-
-export const Help = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+export const Lock = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg
-        width={width}
-        {...attributes}
-        height={height}
         stroke="currentColor"
         fill="none"
         strokeWidth="2"
         viewBox="0 0 24 24"
         strokeLinecap="round"
         strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
     >
-        <circle cx="12" cy="12" r="10"></circle>
-        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+    </svg>
+);
+
+export const LockOpen = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+        <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
     </svg>
 );
 
@@ -1575,12 +1688,31 @@ export const Menu = ({ height = "1em", width = "1em", ...attributes }: IconSvgPr
         strokeLinecap="round"
         strokeLinejoin="round"
         width={width}
-        {...attributes}
         height={height}
+        {...attributes}
     >
         <line x1="4" x2="20" y1="12" y2="12"></line>
         <line x1="4" x2="20" y1="6" y2="6"></line>
         <line x1="4" x2="20" y1="18" y2="18"></line>
+    </svg>
+);
+
+export const Minimize = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <polyline points="4 14 10 14 10 20"></polyline>
+        <polyline points="20 10 14 10 14 4"></polyline>
+        <line x1="14" y1="10" x2="21" y2="3"></line>
+        <line x1="3" y1="21" x2="10" y2="14"></line>
     </svg>
 );
 
@@ -1623,17 +1755,34 @@ export const PackageSearch = ({ height = "1em", width = "1em", ...attributes }: 
 
 export const PhoneCall = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg
-        width={width}
-        {...attributes}
-        height={height}
         stroke="currentColor"
         fill="none"
         strokeWidth="2"
         viewBox="0 0 24 24"
         strokeLinecap="round"
         strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
     >
         <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+);
+
+export const RotateCcw = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+        <path d="M3 3v5h5"></path>
     </svg>
 );
 
@@ -1647,6 +1796,44 @@ export const Send = ({ height = "16", width = "17", ...attributes }: IconSvgProp
             strokeLinejoin="round"
             d="M1 1l2.166 5.39 8.5 1.564-8.5 1.666L1 15l16-7z"
         />
+    </svg>
+);
+
+export const Share = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        {...attributes}
+        height={height}
+    >
+        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+        <polyline points="16 6 12 2 8 6"></polyline>
+        <line x1="12" x2="12" y1="2" y2="15"></line>
+    </svg>
+);
+
+export const Share2 = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        {...attributes}
+        height={height}
+    >
+        <circle cx="18" cy="5" r="3"></circle>
+        <circle cx="6" cy="12" r="3"></circle>
+        <circle cx="18" cy="19" r="3"></circle>
+        <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
+        <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
     </svg>
 );
 
