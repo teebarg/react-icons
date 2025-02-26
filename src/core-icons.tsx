@@ -1004,6 +1004,22 @@ export const BellOff = ({ height = "1em", width = "1em", ...attributes }: IconSv
     </svg>
 );
 
+export const Bookmark = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+    </svg>
+);
+
 export const Bot = ({ height = "64", width = "64", ...attributes }: IconSvgProps) => (
     <svg width={width} height={height} {...attributes} viewBox="0 0 64 64">
         <rect x="12" y="20" width="40" height="32" rx="8" ry="8" fill="#4CAF50" />
@@ -1075,6 +1091,23 @@ export const CalendarSolid = ({ height = "20", width = "20", ...attributes }: Ic
             d="M5.625 1.875a.625.625 0 0 1 .625.625v1.25h7.5V2.5a.625.625 0 1 1 1.25 0v1.25h.625a2.5 2.5 0 0 1 2.5 2.5v9.375a2.5 2.5 0 0 1-2.5 2.5H4.375a2.5 2.5 0 0 1-2.5-2.5V6.25a2.5 2.5 0 0 1 2.5-2.5H5V2.5a.625.625 0 0 1 .625-.625Zm11.25 7.5a1.25 1.25 0 0 0-1.25-1.25H4.375a1.25 1.25 0 0 0-1.25 1.25v6.25a1.25 1.25 0 0 0 1.25 1.25h11.25a1.25 1.25 0 0 0 1.25-1.25v-6.25Z"
             clipRule="evenodd"
         ></path>
+    </svg>
+);
+
+export const Camera = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+        <circle cx="12" cy="13" r="3"></circle>
     </svg>
 );
 
