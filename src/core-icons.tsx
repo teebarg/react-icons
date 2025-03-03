@@ -927,6 +927,27 @@ export const ArrowsPointingOut = ({ height = "15", width = "15", ...attributes }
     </svg>
 );
 
+export const AudioLines = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <path d="M2 10v3"></path>
+        <path d="M6 6v11"></path>
+        <path d="M10 3v18"></path>
+        <path d="M14 8v7"></path>
+        <path d="M18 5v13"></path>
+        <path d="M22 10v3"></path>
+    </svg>
+);
+
 export const BatteryFull = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
     <svg
         stroke="currentColor"
@@ -1001,6 +1022,23 @@ export const BellOff = ({ height = "1em", width = "1em", ...attributes }: IconSv
         <path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path>
         <path d="M18 8a6 6 0 0 0-9.33-5"></path>
         <line x1="1" y1="1" x2="23" y2="23"></line>
+    </svg>
+);
+
+export const Bolt = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+        <circle cx="12" cy="12" r="4"></circle>
     </svg>
 );
 
@@ -1108,6 +1146,25 @@ export const Camera = ({ height = "1em", width = "1em", ...attributes }: IconSvg
     >
         <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
         <circle cx="12" cy="13" r="3"></circle>
+    </svg>
+);
+
+export const CameraOff = ({ height = "1em", width = "1em", ...attributes }: IconSvgProps) => (
+    <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        width={width}
+        height={height}
+        {...attributes}
+    >
+        <line x1="2" x2="22" y1="2" y2="22"></line>
+        <path d="M7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16"></path>
+        <path d="M9.5 4h5L17 7h3a2 2 0 0 1 2 2v7.5"></path>
+        <path d="M14.121 15.121A3 3 0 1 1 9.88 10.88"></path>
     </svg>
 );
 
