@@ -1,4 +1,4 @@
-export { DiscordIcon, TwitterIcon, GithubIcon, FacebookIcon, YoutubeIcon, WhatsAppIcon } from "./icons/social";
+export { Discord, Linkedin, Twitter, Github, Facebook, Youtube, WhatsApp } from "./icons/social";
 export { Moon, MoonFilled, Sun, SunFilled, HeartFilled, Heart } from "./icons/theme";
 export { MasterCardIcon, PayPalIcon, VisaCardIcon, CreditCard } from "./icons/payment";
 export { Cart, Delivery, Package, Truck, Checkout } from "./icons/e-commerce";
@@ -102,6 +102,8 @@ export {
     Image,
     InformationCircleSolid,
     Layout,
+    Link,
+    Link2,
     List,
     Loader,
     Location,

@@ -1,8 +1,7 @@
-
 import * as React from "react";
 import { IconSvgProps } from "../types";
 
-export const DiscordIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
+export const Discord: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
     return (
         <svg height={size || height} viewBox="0 0 24 24" width={size || width} {...props}>
             <path
@@ -13,7 +12,27 @@ export const DiscordIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, 
     );
 };
 
-export const TwitterIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
+export const Linkedin: React.FC<IconSvgProps> = ({ width = "24", height = "24", ...props }) => {
+    return (
+        <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            width={width}
+            height={height}
+            {...props}
+        >
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect width="4" height="12" x="2" y="9" />
+            <circle cx="4" cy="4" r="2" />
+        </svg>
+    );
+};
+
+export const Twitter: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
     return (
         <svg height={size || height} viewBox="0 0 24 24" width={size || width} {...props}>
             <path
@@ -24,7 +43,7 @@ export const TwitterIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, 
     );
 };
 
-export const GithubIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
+export const Github: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
     return (
         <svg height={size || height} viewBox="0 0 24 24" width={size || width} {...props}>
             <path
@@ -37,7 +56,7 @@ export const GithubIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, .
     );
 };
 
-export const FacebookIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
+export const Facebook: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
     return (
         <svg height={size || height} viewBox="0 0 24 24" width={size || width} {...props}>
             <path
@@ -48,7 +67,7 @@ export const FacebookIcon: React.FC<IconSvgProps> = ({ size = 24, width, height,
     );
 };
 
-export const YoutubeIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
+export const Youtube: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
     return (
         <svg height={size || height} viewBox="0 0 24 24" width={size || width} {...props}>
             <path
@@ -59,7 +78,7 @@ export const YoutubeIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, 
     );
 };
 
-export const WhatsAppIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
+export const WhatsApp: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
     return (
         <svg viewBox="0 0 24 24" height={size || height} width={size || width} {...props}>
             <path
